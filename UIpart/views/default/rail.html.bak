@@ -1,0 +1,24 @@
+{{extend 'layout2.html'}}
+<head>
+<style>
+   .table_border_both_left
+    {
+        border:1px solid black;
+    }
+    .style2 a{
+        text-decoration:none;
+        cursor:default;
+    }
+    .table_border_both_left tbody tr td a{
+        cursor:default;
+    }
+    </style>
+</head>
+<br>
+
+<p id="change">{{=soup}}</p>
+<script>
+	$a=$('#change').text();
+	$('#change').html($a);
+</script>
+{{=form2}}

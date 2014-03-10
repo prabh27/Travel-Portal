@@ -1,0 +1,10 @@
+{{extend 'layout.html'}}
+<br/><br/>
+<b>Hotel name : </b>{{=hotel['hotelName']}}<br/>
+<b>Hotel address : </b>{{=hotel['hotelAddress']}}, {{=hotel['hotelCity']}}<br/>
+<b>Check-in : </b>{{=request.args(1)}}<br/>
+<b>Check-out : </b>{{=request.args(2)}}<br/>
+<b>Rooms : </b>{{=request.args(3)}}<br/>
+<b>Room type description : </b>{{=fin['roomTypeDescription']}}<br/><br/>
+<a href="{{=URL(r=request,f='booking_done',args=(request.args(0),request.args(1),request.args(2),request.args(3),request.args(4)))}}"><button type="btn btn-primary">Book</button></a>
+

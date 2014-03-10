@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Under Construction</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/idea.css" type="text/css" media="all">    
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+  <!-- demo -->
+  <link rel="stylesheet" href="css/demo.css" type="text/css" media="all">
+  <!-- end demo -->  
+  <script src="js/highlight.js"></script>
+  <script src="js/html5.js"></script>
+  <script src="js/html-xml.js"></script>
+  <script src="js/css.js"></script>
+  <script src="js/javascript.js"></script>
+  
+  <script>
+    hljs.tabReplace = '    ';
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+  <!--[if lt IE 7]>
+  	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="screen">    
+  <![endif]-->
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">    
+  <![endif]-->
+</head>
+
+<body>
+	<div id="main">
+		<div class="inside">
+			<!-- header -->
+			<header id="header">
+				<div class="inside">
+					<h1>Countdown Script Manual<span class="small">(Under Construction page)</span></h1>
+				</div>
+			</header>
+			<section id="content">
+				<article>		
+					<div class="inner">
+						<div class="counter_pos1">
+							<div id="counter"></div>
+							<div class="counter_desc">
+								<div class="days">Days</div>
+								<div class="hours">Hours</div>
+								<div class="minutes">Minutes</div>
+								<div class="seconds">Seconds</div>
+							</div>	
+						</div>
+						<p class="pad"><strong>Features:</strong></p>
+						<div class="inner">
+							<ul>
+								<li>counts time till exact date;</li>
+								<li>has custom skin designs.</li>
+							</ul>
+						</div>	
+					</div>
+					<h2 class="pad">Description</h2>
+					<div class="inner">
+						<p><strong>Files needed to work with the timer:</strong></p>
+						<div class="inner">
+							<ul>
+								<li><strong>jquery-1.7.1.min.js</strong> &ndash; jQuery library (the timer will work with this version of library only);</li>
+								<li><strong>jquery.countdown.min.js</strong> &ndash; the timer functionality;</li>
+								<li><strong>demo.css</strong> &ndash; the set of CSS styles for the timer stylization.</li>
+							</ul>
+						</div>
+						<p class="pad"><strong>Please include the following files in the  &lt;head&gt; section of HTML file to start working with the timer:</strong></p>
+						<div class="code"><pre><code>&lt;link rel="stylesheet" href="css/demo.css" type="text/css" media="all"&gt;
+&lt;script type="text/javascript" src="js/jquery-1.7.1.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/jquery.countdown.min.js"&gt;&lt;/script&gt;</pre></code></div>
+						<p class="pad"><strong>The HTML Timer Structure:</strong></p>
+						<div class="code">
+							<pre><code>&lt;div id="counter"&gt;&lt;/div&gt;
+&lt;div class="counter_desc"&gt;
+	&lt;div class="days"&gt;Days&lt;/div&gt;
+	&lt;div class="hours"&gt;Hours&lt;/div&gt;
+	&lt;div class="minutes"&gt;Minutes&lt;/div&gt;
+	&lt;div class="seconds"&gt;Seconds&lt;/div&gt;
+&lt;/div></code></pre>
+						</div>
+					</div>
+					<h2 class="pad1">Initialization</h2>
+					<div class="inner">
+						<p class="pad">You can find code for the timer initialization in the end of the <strong>jquery.countdown.min.js</strong> file:</p>
+						<div class="code">
+							<pre><code>$(document).ready(function(){
+	var _date=new Date()
+		,countdown_to={
+			year:2013
+			,month:6 
+			,date:13
+			,hours:0
+			,minutes:15
+			,seconds:00
+		}
+	
+	_date.setFullYear(countdown_to.year,countdown_to.month,countdown_to.date)
+	_date.setHours(countdown_to.hours)
+	_date.setMinutes(countdown_to.minutes)
+	_date.setSeconds(countdown_to.seconds)
+	
+	/*code for demonstration*/
+	_date=new Date()
+	_date.setMonth(_date.getMonth()+8)
+	/*end code for demonstration*/
+		
+	$('#counter').countdown({
+		image: 'images/digits_inverted.png',
+		startTime: _date,
+		stepTime: 35
+	});	
+});							</code></pre>
+						</div>
+						<p class="pad">The initialization occurs on the event <b><i>$(document).ready()</i></b>.</p> Parameters:
+						<ul>
+							<li><strong>image</strong> &ndash; shows path to the image which will be used as a skin (the directory <strong>images</strong> contains files that you can use as skins for the timer);</li>
+							<li><strong>startTime</strong> &ndash; sets the final date of the countdown. Time countdown is implemented with  the help of variable <strong>_date</strong>;</li>
+							<li><strong>stepTime</strong> &ndash; sets cycle rate of numbers’ animation.</li>							
+						</ul>
+						<p class="pad">The demo version shows the time that remains from the current date plus 8 months. That is why timer starts a new countdown every time you refresh the demo page. Here is a code where you can edit these parameters:</p>
+						<div class="code">
+							<pre><code>	
+	/*code for demonstration*/
+	_date=new Date()
+	_date.setMonth(_date.getMonth()+8)
+	/*end code for demonstration*/
+						</code></pre>
+						</div>
+						<p class="pad">If you want to set exact date, you should change variable <strong>_date</strong>. To do this you must change values for <strong>year, month</strong>(pay attention that months’ numbering starts from zero)<strong>, date, hours, minutes, seconds</strong>. Here is a piece of code where you can change these parameters:<p>
+						<div class="code pad">
+							<pre><code>$(document).ready(function(){
+	var _date=new Date()
+		,countdown_to={
+			year:2013
+			,month:6 
+			,date:13
+			,hours:0
+			,minutes:15
+			,seconds:00
+		}
+});							</code></pre>
+						</div>
+						<p class="pad">Also you have to delete the following code:</p>
+						<div class="code">
+							<pre><code>
+	/*code for demonstration*/
+	_date=new Date()
+	_date.setMonth(_date.getMonth()+8)
+	/*end code for demonstration*/
+						</code></pre>
+						</div>
+						<h2 class="pad1">Color themes</h2>
+						<p class="pad">Below you’ll find examples of skin solutions for the timer. All these skins you can find in <strong>images</strong> directory.</p>
+						<div class="counter_pos">
+							<div id="counter9"></div>
+							<div class="counter_desc">
+								<div class="days">Days</div>
+								<div class="hours">Hours</div>
+								<div class="minutes">Minutes</div>
+								<div class="seconds">Seconds</div>
+							</div>	
+							<div class="code pad">
+							<pre><code>$('#counter').countdown({
+	image: 'images/digits_inverted.png',
+});						</code></pre>
+						</div>	
+						</div>
+						<div class="counter_pos">
+							<div id="counter1"></div>
+							<div class="counter_desc">
+								<div class="days">Days</div>
+								<div class="hours">Hours</div>
+								<div class="minutes">Minutes</div>
+								<div class="seconds">Seconds</div>
+							</div>
+							<div class="code pad">
+							<pre><code>$('#counter').countdown({
+	image: 'images/digits.png',
+});						</code></pre>
+						</div>	
+						</div>						
+						<div class="counter_pos">
+							<div id="counter2"></div>
+							<div class="counter_desc">
+								<div class="days">Days</div>
+								<div class="hours">Hours</div>
+								<div class="minutes">Minutes</div>
+								<div class="seconds">Seconds</div>
+							</div>	
+							<div class="code pad">
+							<pre><code>$('#counter').countdown({
+	image: 'images/digits2.png',
+});						</code></pre>
+						</div>	
+						</div>
+						<div class="counter_pos">
+							<div id="counter3"></div>
+							<div class="counter_desc">
+								<div class="days">Days</div>
+								<div class="hours">Hours</div>
+								<div class="minutes">Minutes</div>
+								<div class="seconds">Seconds</div>
+							</div>	
+							<div class="code pad">
+							<pre><code>$('#counter').countdown({
+	image: 'images/digits2_blue.png',
+});						</code></pre>
+						</div>	
+						</div>
+						<div class="counter_pos">
+							<div id="counter4"></div>
+							<div class="counter_desc">
+								<div class="days">Days</div>
+								<div class="hours">Hours</div>
+								<div class="minutes">Minutes</div>
+								<div class="seconds">Seconds</div>
+							</div>	
+							<div class="code pad">
+							<pre><code>$('#counter').countdown({
+	image: 'images/digits2_green.png',
+});						</code></pre>
+						</div>	
+						</div>
+						<div class="counter_pos">
+							<div id="counter5"></div>
+							<div class="counter_desc">
+								<div class="days">Days</div>
+								<div class="hours">Hours</div>
+								<div class="minutes">Minutes</div>
+								<div class="seconds">Seconds</div>
+							</div>	
+							<div class="code pad">
+							<pre><code>$('#counter').countdown({
+	image: 'images/digits2_orange.png',
+});						</code></pre>
+						</div>	
+						</div>
+						<div class="counter_pos">
+							<div id="counter6"></div>
+							<div class="counter_desc">
+								<div class="days">Days</div>
+								<div class="hours">Hours</div>
+								<div class="minutes">Minutes</div>
+								<div class="seconds">Seconds</div>
+							</div>	
+							<div class="code pad">
+							<pre><code>$('#counter').countdown({
+	image: 'images/digits2_purple.png',
+});						</code></pre>
+						</div>	
+						</div>
+						<div class="counter_pos">
+							<div id="counter7"></div>
+							<div class="counter_desc">
+								<div class="days">Days</div>
+								<div class="hours">Hours</div>
+								<div class="minutes">Minutes</div>
+								<div class="seconds">Seconds</div>
+							</div>	
+							<div class="code pad">
+							<pre><code>$('#counter').countdown({
+	image: 'images/digits2_red.png',
+});						</code></pre>
+						</div>	
+						</div>
+						<div class="counter_pos">
+							<div id="counter8"></div>
+							<div class="counter_desc">
+								<div class="days">Days</div>
+								<div class="hours">Hours</div>
+								<div class="minutes">Minutes</div>
+								<div class="seconds">Seconds</div>
+							</div>	
+							<div class="code pad">
+							<pre><code>$('#counter').countdown({
+	image: 'images/digits2_yellow.png',
+});						</code></pre>
+						</div>	
+						</div>						
+					</div>
+				</article> 
+			</section>
+		</div>
+	</div>
+</body>
+</html>

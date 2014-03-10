@@ -1,0 +1,193 @@
+{{extend 'layout2.html'}}
+<head>
+    <style>
+        .Prevbook{
+            width:100%;
+            box-shadow:0px 0px 4px #bbbbbb;
+            
+        }
+        .Prevbook caption{
+            font-size:16px;
+            padding-bottom:4px;
+            font-weight:bold;
+        }
+        .Prevbook tr:nth-child(1) td{
+            font-weight:bold;
+            background-color:#bbbbbb;
+            font-size:16px;
+        }
+        .Prevbook tr td{
+            text-align:center;
+        }
+        .notify{
+            text-align:center;
+            font-size:16px;
+        }
+    </style>
+</head>
+
+<br>
+<br>
+<div>
+<center><h3><span style="text-align:center;color:#08686b">Flight Bookings</span></h3></center>
+{{if (f2==0):}}
+<table class="Prevbook" cellpadding='6'>
+<caption>Previous Bookings</caption>
+    <tr>
+    
+<td>Flight Name</td>
+<td>Date</td>
+<td>Arrival Time</td>
+<td>Departure time</td>
+<td>Class</td>
+<td>Price</td>
+<td>Source</td>
+<td>Destination</td>
+    <td>Number of Seats
+    </td>
+<td>Passengers</td>
+</tr>
+    
+{{pass}}
+{{if f2==1:}}
+<span class="notify">
+    No previous  bookings
+    </span>
+{{pass}}
+{{for i in range(len(flight)):}}
+{{if ((flight[i]['d']-d1)<datetime.timedelta(0)):}}
+<tr>
+<td>{{=flight[i]['booked_in']}}</td>
+<td>{{=flight[i]['d']}}</td>
+    <td>{{=(flight[i]['arrival']).strftime('%I:%M %p')}}</td>
+    <td>{{=flight[i]['depart'].strftime("%I:%M %p")}}</td>
+<td>{{=flight[i]['cl']}}</td>
+<td>{{=flight[i]['price']}}</td>
+<td>{{=flight[i]['src']}}</td>
+<td>{{=flight[i]['dest']}}</td>
+<td>{{=flight[i]['num']}}</td>    
+<td>{{=flight[i]['passengers']}}</td>
+</tr>
+<br>
+<br>
+{{pass}}
+{{pass}}
+</table>
+<br>
+<br>
+<br>
+{{if flag2==0:}}
+<table cellpadding='6' class="Prevbook">
+    <caption>Scheduled Bookings</caption>
+<tr>
+<td>Flight Name</td>
+<td>Date</td>
+<td>Arrival Time</td>
+<td>Departure time</td>
+<td>Class</td>
+<td>Price</td>
+<td>Source</td>
+<td>Destination</td>
+    <td>Number of seats</td>
+<td>Passengers</td>
+<td></td>
+    </tr>
+{{pass}}
+{{if flag2==1:}}
+No future bookings
+{{pass}}
+{{for i in range(len(flight)):}}
+{{if ((flight[i]['d']-d1)>=datetime.timedelta(0)):}}
+<tr>
+<td>{{=flight[i]['booked_in']}}</td>
+<td>{{=flight[i]['d'].strftime("%d %b %Y")}}</td>
+    <td>{{=(flight[i]['arrival']).strftime("%I:%M %p")}}</td>
+    <td>{{=flight[i]['depart'].strftime("%I:%M %p")}}</td>
+<td>{{=flight[i]['cl']}}</td>
+<td>{{=flight[i]['price']}}</td>
+<td>{{=flight[i]['src']}}</td>
+<td>{{=flight[i]['dest']}}</td>
+    <td>{{=flight[i]['num']}}</td>
+<td>{{=flight[i]['passengers']}}</td>
+<td>
+<a href="{{=URL('dum', args=(0,flight[i]['id'],flight[i]['lis'],flight[i]['num'],flight[i]['booked_in'],flight[i]['cl'],flight[i]['src'],flight[i]['dest']))}}"><button class='btn btn-inverse'>CANCEL</button></a></td>
+</tr>
+{{pass}}
+{{pass}}
+</table>
+</div>
+<br>
+<br>
+<br>
+<div>
+    
+<h3 style="text-align:center;color:#08686b">Hotel Bookings</h3>
+{{if (flag1==0):}}
+<table cellpadding='6' class="Prevbook">
+<caption>Previous bookings:</caption>
+    <tr>
+<td>Hotel Name</td>
+<td>Checkin</td>
+<td>Checkout</td>
+<td>Hotel Code</td>
+<td>Room code</td>
+<td>Rooms</td>
+</tr>
+
+{{pass}}
+{{if (flag1==1):}}
+    <span class="notify"> No previous bookings</span>
+{{pass}}
+{{for i in range(len(rec)):}}
+<!--{{if ((rec[i]['checkin']-d1) <datetime.timedelta(0)):}} -->
+<tr>
+<td>{{=rec[i]['hotel_code']}}</td>
+<td>{{=rec[i]['checkin']}}</td>
+<td>{{=rec[i]['checkout']}}</td>
+<td>{{=rec[i]['hotel_code']}}</td>
+<td>{{=rec[i]['room_code']}}</td>
+<td>{{=rec[i]['rooms']}}</td>
+</tr>
+<!--{{pass}}-->
+{{pass}}
+</table>
+<br>
+<br>
+<br>
+{{if (f1==0):}}
+<table cellpadding='6' class="Prevbook">
+<caption>Scheduled Bookings</caption>
+    <tr>
+<td>Hotel Name</td>
+<td>Checkin</td>
+<td>Checkout</td>
+<td>Hotel Code</td>
+<td>Room code</td>
+<td>Rooms</td>
+        <td></td>
+</tr>
+    
+{{pass}}
+{{if (f1==1) :}}
+    <span class="notify">No bookings scheduled</span>
+{{pass}}
+{{for i in range(len(rec)):}}
+{{if ((rec[i]['checkin']-d1)>=datetime.timedelta(0)):}}
+<tr>
+<td>{{=rec[i]['hotel_code']}}</td>
+<td>{{=rec[i]['checkin']}}</td>
+<td>{{=rec[i]['checkout']}}</td>
+<td>{{=rec[i]['hotel_code']}}</td>
+<td>{{=rec[i]['room_code']}}</td>
+<td>{{=rec[i]['rooms']}}</td>
+<td>
+<a href="{{=URL('dum', args=('1',rec[i]['id'],rec[i]['checkin'],rec[i]['checkout'],rec[i]['hotel_code'],rec[i]['rooms']))}}"><button class='btn btn-inverse'>CANCEL</button></a></td>
+</tr>
+{{pass}}
+{{pass}}
+</table>
+</div>
+<!--Are you sure you want to cancel the hotel booking??
+<br>
+<button class='btn btn-primary'><a href="{{=URL('dum',args=)>Cancel Flight</a></button>&nbsp;&nbsp;&nbsp;<button><a href="">Back</a></button>
+-->

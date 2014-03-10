@@ -1,0 +1,21 @@
+{{extend 'layout2.html'}}
+<br>
+<br>
+<table>
+<tr>
+<th>NAME</th>
+<th>ADDRESS</th>
+<th>HOTEL RATING</th>
+{{for l in range(len(li)):}}
+<tr>
+<td>
+{{=li[l]['name']}}
+</td>
+<td>{{=li[l]['address1']}}
+</td>
+<td>{{=li[l]['hotelRating']}}
+</td>
+<td><a href="{{=URL(r=request,f='hotel_desc',args=(li[l]["hotelId"],request.args(1),request.args(2),request.args(3)))}}"><button type="btn btn-primary">Book</button></a>
+</tr>
+{{pass}}
+</table>

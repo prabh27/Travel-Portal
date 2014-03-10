@@ -1,0 +1,46 @@
+{{extend 'layout.html'}}
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+    Add Trips 
+
+</a>
+</h4>
+</div>
+<div id="collapseOne" class="panel-collapse collapse">
+<div class="panel-body" >
+{{=form}}
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+Add Hotels
+</a>
+</h4>
+</div>
+<div id="collapseTwo" class="panel-collapse collapse">
+<div class="panel-body">
+{{=form2}}
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+Add a new Place
+</a>
+</h4>
+</div>
+<div id="collapseThree" class="panel-collapse collapse">
+<div class="panel-body">
+{{=form3}}
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,16 @@
+{{extend 'layout2.html'}}
+<p><b>Ticket 1:</b></p>
+Flight id : {{=flight1[0]}}<br/>
+Company : {{=flight1[1]}}<br/>
+Departure Time : {{=flight1[2]}}<br/>
+Arrival Time : {{=flight1[3]}}<br/>
+Price : {{=flight1[5]}}<br/>
+<p><b>Ticket 2</b></p>
+Flight id : {{=flight2[0]}}<br/>
+Company : {{=flight2[1]}}<br/>
+Departure Time : {{=flight2[2]}}<br/>
+Arrival Time : {{=flight2[3]}}<br/>
+Price : {{=flight2[5]}}<br/>
+{{flight1=str(request.vars.flight1)}}
+{{flight2=str(request.vars.flight2)}}
+<a href="{{=URL('round_ticket',args=(request.vars.src,request.vars.dest,request.vars.cl),vars=dict(flight1=flight1,flight2=flight2))}}"<button class="btn btn-info">Book</button></a>

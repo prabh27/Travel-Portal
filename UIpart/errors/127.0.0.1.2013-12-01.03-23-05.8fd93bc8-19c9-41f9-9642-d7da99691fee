@@ -1,0 +1,809 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.NameError'> name 'fieldbx' is not defined"
+p3
+sS'layer'
+p4
+S'/home/mohanty/web2py/applications/30thdec/views/default/hotel_search.html'
+p5
+sS'code'
+p6
+S'response.write(\'<!DOCTYPE html>\\n<html lang="en">\\n<head>\\n    <title>Home</title>\\n    <meta charset="utf-8">\\n\\t<meta name="viewport" content="width=device-width, initial-scale=1.0">\\n    <meta name="description" content="Your description">\\n    <meta name="keywords" content="Your keywords">\\n    <meta name="author" content="Your name">\\n    <link rel="icon" href="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/favicon.ico\'))\nresponse.write(\'" type="image/x-icon">\\n    <link rel="shortcut icon" href="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/favicon.ico\'))\nresponse.write(\'" type="image/x-icon" />\\n    <link href=\\\'http://fonts.googleapis.com/css?family=Open+Sans:400,600,700\\\' rel=\\\'stylesheet\\\' type=\\\'text/css\\\'>\\n\\t<script type="text/javascript" src="\', escape=False)\nresponse.write(URL(\'static\',\'js/jquery.js\'))\nresponse.write(\'"></script>\\n    <script type="text/javascript" src="\', escape=False)\nresponse.write(URL(\'static\',\'js/jquery.easing.1.3.js\'))\nresponse.write(\'"></script>\\n\\t<script type="text/javascript" src="\', escape=False)\nresponse.write(URL(\'static\',\'js/camera.js\'))\nresponse.write(\'"></script>\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/js/jquery.ui.totop.js\'))\nresponse.write(\'" type="text/javascript"></script>\\n\\t<script>\\n      $(document).ready(function(){   \\n              jQuery(\\\'.camera_wrap\\\').camera();\\n        });    \\n\\t</script>\\t\\t\\n\\t<!--[if lt IE 8]>\\n  \\t\\t<div style=\\\'text-align:center\\\'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  \\n \\t<![endif]-->\\n  \\n  <!--[if (gt IE 9)|!(IE)]><!-->\\n  <script type="text/javascript" src="\', escape=False)\nresponse.write(URL(\'static\',\'js/jquery.mobile.customized.min.js\'))\nresponse.write(\'"></script>\\n  <!--<![endif]-->\\n  \\t<!--[if lt IE 9]>\\n    <link href=\\\'http://fonts.googleapis.com/css?family=Open+Sans:400\\\' rel=\\\'stylesheet\\\' type=\\\'text/css\\\'>\\n    <link href=\\\'http://fonts.googleapis.com/css?family=Open+Sans:600\\\' rel=\\\'stylesheet\\\' type=\\\'text/css\\\'>\\n    <link href=\\\'http://fonts.googleapis.com/css?family=Open+Sans:700\\\' rel=\\\'stylesheet\\\' type=\\\'text/css\\\'>\\n    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>\\n    <link rel="stylesheet" href="css/docs.css" type="text/css" media="screen">\\n    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">\\n  <![endif]-->\\n\', escape=False)\nresponse.files.append(URL(\'static\',\'css_template/css/bootstrap.css\'))\nresponse.files.append(URL(\'static\',\'css_template/css/responsive.css\'))\nresponse.files.append(URL(\'static\',\'css_template/css/camera.css\'))\nresponse.files.append(URL(\'static\',\'css_template/css/style.css\'))\nresponse.files.append(URL(\'static\',\'css_template/js/jquery.js\'))\nresponse.files.append(URL(\'static\',\'css_template/js/jquery.easing.1.3.js\'))\nresponse.files.append(URL(\'static\',\'css_template/js/camera.js\'))\nresponse.files.append(URL(\'static\',\'css_template/js/jquery.ui.totop.js\'))\nresponse.write(\'\\n\\n\', escape=False)\nresponse.write(\'<script type="text/javascript"><!--\\n    // These variables are used by the web2py_ajax_init function in web2py_ajax.js (which is loaded below).\\n    var w2p_ajax_confirm_message = "\', escape=False)\nresponse.write(T(\'Are you sure you want to delete this object?\'))\nresponse.write(\'";\\n    var w2p_ajax_date_format = "\', escape=False)\nresponse.write(T(\'%Y-%m-%d\'))\nresponse.write(\'";\\n    var w2p_ajax_datetime_format = "\', escape=False)\nresponse.write(T(\'%Y-%m-%d %H:%M:%S\'))\nresponse.write(\'";\\n    var ajax_error_500 = \\\'\', escape=False)\nresponse.write(XML(T(\'An error occured, please %s the page\') % A(T(\'reload\'), _href=URL(args=request.args, vars=request.get_vars))))\nresponse.write("\'\\n    //--></script>\\n", escape=False)\nresponse.files.insert(0,URL(\'static\',\'js/jquery.js\'))\nresponse.files.insert(1,URL(\'static\',\'css/calendar.css\'))\nresponse.files.insert(2,URL(\'static\',\'js/calendar.js\'))\nresponse.files.insert(3,URL(\'static\',\'js/web2py.js\'))\nresponse.include_meta()\nresponse.include_files()\nresponse.write(\'\\n\', escape=False)\nresponse.write(\'\\n</head>\\n\\n<body>\\n\\n                                <div class="flash">\', escape=False)\nresponse.write(response.flash or \'\')\nresponse.write(\'</div>\\n<!--==============================header=================================-->\\n<header class="p0">\\n    <div class="container">\\n    \\t<div class="row">\\n        \\t<div class="span12">\\n            \\t\\n            \\t<div class="header-block clearfix">\\n                    <div class="clearfix header-block-pad">\\n                        <h1 class="brand"><a href="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/index.html\'))\nresponse.write(\'"><!--<img src="img/logo.png" alt="">--><h3 style="color:lightblue">Traveller\\\'s Paradise</h3></a><span>Cuz the world is just so ... AWESOME!!</span></h1><span style="float:right;"><table class="headprofile" cellspacing="10px">\\n                        <tr>\\n                            <td><a href="#">User Profile</a></td>\\n                            <td><a href="#">Previous Bookings</a></td>\\n                            <td><a href="#">Logout</a></td>\\n                        </tr>\\n                        </table>\\n                        <!--<span class="contacts">Call Us Toll Free:  <span>+1 234 567 89 90</span><br>E-mail: <a href="#">company@demolink.org</a></span>-->\\n                    </div>\\n                    <div class="navbar navbar_ clearfix">\\n                        <div class="navbar-inner navbar-inner_">\\n                            <div class="container">\\n                                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse_">MENU</a>                                                   \\n                                <!--Menu-BAR -->\\n                                <div class="nav-collapse nav-collapse_ collapse">\\n                                \\n                                    <ul class="nav sf-menu">\\n                                      \', escape=False)\nif fieldbx==1:\n    response.write(\'\\n                                      <li class="active li-first"><a href="#">Flights</a></li>\\n                                        <li><a href="index-1.html">Trains</a></li>\\n                                          <li><a href="#">Buses</a></li>\\n                                          <li><a href="#">Hotels</a></li>\\n                                        <li><a href="#">Package Deals</a></li>\\n                                        \', escape=False)\nelif fieldbx==4:\n    response.write(\'\\n                                        <li ><a href="#">Flights</a></li>\\n                                        <li><a href="index-1.html">Trains</a></li>\\n                                          <li><a href="#">Buses</a></li>\\n                                          <li class="active li-first"><a href="#">Hotels</a></li>\\n                                        <li><a href="#">Package Deals</a></li>\\n                                        \', escape=False)\nelse:\n    response.write(\'\\n                                        <li class="active li-first"><a href="#">Flights</a></li>\\n                                        <li><a href="index-1.html">Trains</a></li>\\n                                          <li><a href="#">Buses</a></li>\\n                                          <li><a href="#">Hotels</a></li>\\n                                        <li><a href="#">Package Deals</a></li>\\n                                        \', escape=False)\n    pass\nresponse.write(\'\\n                                        </ul>\\n                                      \\n                                </div>\\n                                <!--SOCIAL LINKS ICONS SIDESECTION By Jigar-->\\n                                <!--<ul class="social-icons">\\n                                    <li><a href="#"><img src="img/icon-1.png" alt=""></a></li>\\n                                    <li><a href="#"><img src="img/icon-2.png" alt=""></a></li>\\n                                    <li><a href="#"><img src="img/icon-3.png" alt=""></a></li>\\n                                    <li><a href="#"><img src="img/icon-4.png" alt=""></a></li>\\n                                </ul>-->\\n                            </div>\\n                        </div>\\n                     </div>   \\n                </div>\\n            </div>\\n         </div>   \\n    </div>\\n    <div class="slider">\\n    <div class="camera_wrap">\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'images/1st.jpg\'))\nresponse.write(\'"></div>\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'images/2nd.jpg\'))\nresponse.write(\'"></div>\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/slide3.jpg\'))\nresponse.write(\'"></div>\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/slide4.jpg\'))\nresponse.write(\'"></div>\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/slide5.jpg\'))\nresponse.write(\'"></div>\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/slide6.jpg\'))\nresponse.write(\'"></div>\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/slide7.jpg\'))\nresponse.write(\'"></div>\\n    </div>\\n</div>\\n</header>\\n\\n<section id="content" class="main-content">\\n\', escape=False)\nresponse.write(\'\\n\', escape=False)\nresponse.write(form)\nresponse.write(\'\\n\', escape=False)\nresponse.write(\'\\n<!--  <div class="container">\\n    <div class="row">\\n      <div class="span12">        \\n        <ul class="thumbnails">\\n          <li class="span3">\\n            <div class="thumbnail">\\n              <div class="caption">\\n              \\t<img src="img/img-1.png" alt="">\\n                <h5>Most</h5>\\n                <h3>popular</h3>\\n              </div>  \\n              <div class="thumbnail-pad">\\n                  <p>Praesent vestibulum molestie lacus. Aenean noy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. </p>\\n                  <a href="#" class="btn btn_">more info</a>\\n              </div>\\n            </div>\\n          </li>\\n          <li class="span3">\\n            <div class="thumbnail">\\n              <div class="caption">\\n              \\t<img src="img/img-2.png" alt="">\\n                <h5>Beauty</h5>\\n                <h3>Gifts</h3>\\n              </div>  \\n              <div class="thumbnail-pad">\\n                  <p>Praesent vestibulum molestie lacus. Aenean my hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. </p>\\n                  <a href="#" class="btn btn_">more info</a>\\n              </div>\\n            </div>\\n          </li>\\n          <li class="span3">\\n            <div class="thumbnail">\\n              <div class="caption">\\n              \\t<img src="img/img-3.png" alt="">\\n                <h5>Attention</h5>\\n                <h3>to Detail</h3>\\n              </div>  \\n              <div class="thumbnail-pad">\\n                  <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suipit varius mi. Cum sociis natoque penatibus et.</p>\\n                  <a href="#" class="btn btn_">more info</a>\\n              </div>\\n            </div>\\n          </li>\\n          <li class="span3">\\n            <div class="thumbnail">\\n              <div class="caption">\\n              \\t<img src="img/img-4.png" alt="">\\n                <h5>Award-Winning</h5>\\n                <h3>Fragrances</h3>\\n              </div>\\n              <div class="thumbnail-pad">  \\n                  <p>Nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis.</p>\\n                  <a href="#" class="btn btn_">more info</a>\\n              </div>\\n            </div>\\n          </li>\\n        </ul>\\n      </div>\\n    </div>\\n    <div class="row">\\n    \\t<div class="span8">\\n        \\t<div class="clearfix cols-1">\\n                <div class="span4 left-0">\\n                    <h4 class="indent-2">Welcome</h4>\\n                    <p class="lead">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. </p>\\n                    <figure class="img-indent"><img src="img/page1-img1.jpg" alt="" class="img-radius"></figure>\\n                    Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. \\n                </div>\\n                <div class="span4">\\n                    <h4 class="indent-2">What We Do</h4>\\n                    <p class="lead">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. </p>\\n                    <figure class="img-indent"><img src="img/page1-img2.jpg" alt="" class="img-radius"></figure>\\n                    Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. \\n                </div>\\n            </div>\\n            <h4 class="indent-1">our Capabilities:</h4>\\n            <p class="lead">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturien.</p>\\n            <div class="lists">\\n            \\t<div class="span4 left-0">\\n                    <ul class="list">\\n                        <li><a href="#">Praesent vestibulum molestie lacus aenean</a></li>\\n                        <li><a href="#">nonummy hendrerit mauris</a></li>\\n                        <li><a href="#">Phasellus porta fusce suscipit varius mi</a></li>\\n                        <li><a href="#">Cum sociis natoque penatibus et magnis dis</a></li>\\n                    </ul>\\n                </div>\\n                <div class="span4">\\n                    <ul class="list">\\n                        <li><a href="#">Praesent vestibulum molestie lacus aenean</a></li>\\n                        <li><a href="#">nonummy hendrerit mauris</a></li>\\n                        <li><a href="#">Phasellus porta fusce suscipit varius mi</a></li>\\n                        <li><a href="#">Cum sociis natoque penatibus et magnis dis</a></li>\\n                    </ul>\\n                </div>\\n            </div>\\n            <a href="#" class="link">More Info</a>\\n        </div>    \\n        <div class="span4">\\n        \\t<h4 class="indent-2">Latest News:</h4>\\n            <ul class="list-news">\\n            \\t<li>\\n                \\t<a href="#" class="btn btn_">Apr 21, 2012</a>\\n                    <p class="text-info">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>\\n                    Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. <a href="#" class="underline">>></a>\\n                </li>\\n                <li>\\n                \\t<a href="#" class="btn btn_">Apr 21, 2012</a>\\n                    <p class="text-info">Aenean nonummy hendrerit mauris</p>\\n                    Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes.  <a href="#" class="underline">>></a>\\n                </li>\\n                <li>\\n                \\t<a href="#" class="btn btn_">Apr 21, 2012</a>\\n                    <p class="text-info">Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturien.</p>\\n                    Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes.  <a href="#" class="underline">>></a>\\n                </li>\\n            </ul>\\n            <h4 class="indent-1">testimonials:</h4>\\n\\t\\t\\t<p class="p1">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada.\\xe2\\x80\\x9d</p>\\n            <span class="clr"><strong>Mark Priston</strong>, <a href="#" class="link-2">demolink.org</a></span>\\n        </div>\\n    </div>        \\n</div>-->\\n  </section>\\n<footer>\\n   <div class="container">\\n    <div class="row">\\n      <div class="span4 float2">\\n        <form id="newsletter" method="post" >\\n            <label>Newsletter</label>\\n            <div class="clearfix">\\n                <input type="text" onFocus="if(this.value ==\\\'Enter e-mail here\\\' ) this.value=\\\'\\\'" onBlur="if(this.value==\\\'\\\') this.value=\\\'Enter e-mail here\\\'" value="Enter e-mail here" >\\n                <a href="#" onClick="document.getElementById(\\\'newsletter\\\').submit()" class="btn btn_">subscribe</a>\\n            </div>\\n        </form>\\n    </div>\\n    <div class="span8 float">\\n      \\t<ul class="footer-menu">\\n        \\t<li><a href="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/index.html\'))\nresponse.write(\'" class="current">Flights</a>|</li>\\n            <li><a href="index-1.html">Trains</a>|</li>\\n            <li><a href="index-2.html">Buses</a>|</li>\\n            <li><a href="index-3.html">Hotels</a>|</li>\\n            <li><a href="index-4.html">Package Deals</a>|</li>\\n            \\n        </ul>\\n      \\tCopyright &copy;  IIIT Hyderabad SSAD Team-9 <!-- {%FOOTER_LINK} -->\\n\\n<br />\\n        Joint efforts of<br/>\\n        <table>\\n            <tr><td>Ayush Khandelwal</td></tr><tr><td>Gaurav Mohanty</td></tr><tr><td>Jigar Thakkar</td></tr><tr><td>Prabhsimram Sing Baweja</td></tr>\\n            </table>\\n</div>\\n\\n\\n      </div>\\n    </div>\\n</footer>\\n<script type="text/javascript" src="\', escape=False)\nresponse.write(URL(\'static\',\'js/bootstrap.js\'))\nresponse.write(\'"></script>\\n</body>\\n</html>\\n\', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__hash__'
+p12
+S"<method-wrapper '__hash__' of exceptions.NameError object>"
+p13
+sS'__setattr__'
+p14
+S"<method-wrapper '__setattr__' of exceptions.NameError object>"
+p15
+sS'__reduce_ex__'
+p16
+S'<built-in method __reduce_ex__ of exceptions.NameError object>'
+p17
+sS'__getslice__'
+p18
+S"<method-wrapper '__getslice__' of exceptions.NameError object>"
+p19
+sS'__getitem__'
+p20
+S"<method-wrapper '__getitem__' of exceptions.NameError object>"
+p21
+sS'__setstate__'
+p22
+S'<built-in method __setstate__ of exceptions.NameError object>'
+p23
+sS'args'
+p24
+S'("name \'fieldbx\' is not defined",)'
+p25
+sS'__reduce__'
+p26
+S'<built-in method __reduce__ of exceptions.NameError object>'
+p27
+sS'__str__'
+p28
+S"<method-wrapper '__str__' of exceptions.NameError object>"
+p29
+sS'__format__'
+p30
+S'<built-in method __format__ of exceptions.NameError object>'
+p31
+sS'__getattribute__'
+p32
+S"<method-wrapper '__getattribute__' of exceptions.NameError object>"
+p33
+sS'__class__'
+p34
+S"<type 'exceptions.NameError'>"
+p35
+sS'__unicode__'
+p36
+S'<built-in method __unicode__ of exceptions.NameError object>'
+p37
+sS'__delattr__'
+p38
+S"<method-wrapper '__delattr__' of exceptions.NameError object>"
+p39
+sS'__subclasshook__'
+p40
+S'<built-in method __subclasshook__ of type object>'
+p41
+sS'__repr__'
+p42
+S"<method-wrapper '__repr__' of exceptions.NameError object>"
+p43
+sS'__dict__'
+p44
+S'{}'
+p45
+sS'__sizeof__'
+p46
+S'<built-in method __sizeof__ of exceptions.NameError object>'
+p47
+sS'__doc__'
+p48
+S"'Name not found globally.'"
+p49
+sS'__init__'
+p50
+S"<method-wrapper '__init__' of exceptions.NameError object>"
+p51
+sS'__new__'
+p52
+S'<built-in method __new__ of type object>'
+p53
+ssS'evalue'
+p54
+S"name 'fieldbx' is not defined"
+p55
+sS'request'
+p56
+cgluon.html
+XML_unpickle
+p57
+(S's\xb9R\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top">ajax</td><td valign="top">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">application</td><td valign="top">:</td><td><div>30thdec</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">args</td><td valign="top">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">body</td><td valign="top">:</td><td><div>&lt;cStringIO.StringO object at 0x7f925c565880&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">cid</td><td valign="top">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">client</td><td valign="top">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">controller</td><td valign="top">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">cookies</td><td valign="top">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top">session_id_30thdec</td><td valign="top">:</td><td><div>127.0.0.1-6010333f-1e35-4746-940a-92d8f9478d29<table><tr><td style="font-weight:bold;vertical-align:top">comment</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">domain</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">expires</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">httponly</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">max-age</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">path</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">secure</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">version</td><td valign="top">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">session_id_admin</td><td valign="top">:</td><td><div>127.0.0.1-4e758c3f-41dd-4e62-860d-66066d7217fa<table><tr><td style="font-weight:bold;vertical-align:top">comment</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">domain</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">expires</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">httponly</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">max-age</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">path</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">secure</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">version</td><td valign="top">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">session_id_welcome</td><td valign="top">:</td><td><div>127.0.0.1-c63f5852-b879-4d31-8498-3e92558143c3<table><tr><td style="font-weight:bold;vertical-align:top">comment</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">domain</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">expires</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">httponly</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">max-age</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">path</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">secure</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">version</td><td valign="top">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">env</td><td valign="top">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top">app_folders</td><td valign="top">:</td><td><div>set([&#x27;/home/mohanty/web2py/applications/welcome/&#x27;, &#x27;/home/mohanty/web2py/applications/30thdec/&#x27;, &#x27;/home/mohanty/web2py/applications/admin/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">applications_parent</td><td valign="top">:</td><td><div>/home/mohanty/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">cmd_args</td><td valign="top">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">cmd_options</td><td valign="top">:</td><td><div>&lt;Values at 0x28bb560: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;127.0.1.1&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;mohanty-Inspiron-N5110&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/home/mohanty/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;winservice&#x27;: &#x27;&#x27;, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;profiler_filename&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;scheduler_groups&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;interfaces&#x27;: None, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">db_sessions</td><td valign="top">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">debugging</td><td valign="top">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">gluon_parent</td><td valign="top">:</td><td><div>/home/mohanty/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">http_accept</td><td valign="top">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">http_accept_encoding</td><td valign="top">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">http_accept_language</td><td valign="top">:</td><td><div>en-US,en;q=0.5</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">http_connection</td><td valign="top">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">http_cookie</td><td valign="top">:</td><td><div>session_id_welcome=127.0.0.1-c63f5852-b879-4d31-8498-3e92558143c3; session_id_admin=127.0.0.1-4e758c3f-41dd-4e62-860d-66066d7217fa; session_id_30thdec=127.0.0.1-6010333f-1e35-4746-940a-92d8f9478d29</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">http_host</td><td valign="top">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">http_user_agent</td><td valign="top">:</td><td><div>Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:20.0) Gecko/20100101 Firefox/20.0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">is_jython</td><td valign="top">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">is_pypy</td><td valign="top">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">local_hosts</td><td valign="top">:</td><td><div><table><tr><td><div>::1</div></td></tr><tr><td><div>127.0.1.1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>mohanty-Inspiron-N5110</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">path_info</td><td valign="top">:</td><td><div>/30thdec/default/hotel_search</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">query_string</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">remote_addr</td><td valign="top">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">remote_port</td><td valign="top">:</td><td><div>47778</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">request_method</td><td valign="top">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">request_uri</td><td valign="top">:</td><td><div>/30thdec/default/hotel_search</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">script_name</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">server_name</td><td valign="top">:</td><td><div>mohanty-Inspiron-N5110</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">server_port</td><td valign="top">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">server_protocol</td><td valign="top">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">server_software</td><td valign="top">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">web2py_path</td><td valign="top">:</td><td><div>/home/mohanty/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">web2py_version</td><td valign="top">:</td><td><div>2.5.1-stable+timestamp.2013.06.06.15.39.19</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi_errors</td><td valign="top">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x7f927d5be1e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi_file_wrapper</td><td valign="top">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x288cd50&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi_input</td><td valign="top">:</td><td><div>&lt;socket._fileobject object at 0x7f92501f1ad0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi_multiprocess</td><td valign="top">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi_multithread</td><td valign="top">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi_run_once</td><td valign="top">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi_url_scheme</td><td valign="top">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi_version</td><td valign="top">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">extension</td><td valign="top">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">folder</td><td valign="top">:</td><td><div>/home/mohanty/web2py/applications/30thdec/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">function</td><td valign="top">:</td><td><div>hotel_search</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">get_vars</td><td valign="top">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">global_settings</td><td valign="top">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top">app_folders</td><td valign="top">:</td><td><div>set([&#x27;/home/mohanty/web2py/applications/welcome/&#x27;, &#x27;/home/mohanty/web2py/applications/30thdec/&#x27;, &#x27;/home/mohanty/web2py/applications/admin/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">applications_parent</td><td valign="top">:</td><td><div>/home/mohanty/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">cmd_args</td><td valign="top">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">cmd_options</td><td valign="top">:</td><td><div>&lt;Values at 0x28bb560: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;127.0.1.1&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;mohanty-Inspiron-N5110&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/home/mohanty/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;winservice&#x27;: &#x27;&#x27;, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;profiler_filename&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;scheduler_groups&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;interfaces&#x27;: None, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">db_sessions</td><td valign="top">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">debugging</td><td valign="top">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">gluon_parent</td><td valign="top">:</td><td><div>/home/mohanty/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">is_jython</td><td valign="top">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">is_pypy</td><td valign="top">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">local_hosts</td><td valign="top">:</td><td><div><table><tr><td><div>::1</div></td></tr><tr><td><div>127.0.1.1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>mohanty-Inspiron-N5110</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">web2py_version</td><td valign="top">:</td><td><div>2.5.1-stable+timestamp.2013.06.06.15.39.19</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">is_https</td><td valign="top">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">is_local</td><td valign="top">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">is_restful</td><td valign="top">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">now</td><td valign="top">:</td><td><div>datetime.datetime(2013, 12, 1, 3, 23, 5, 202645)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">post_vars</td><td valign="top">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">raw_args</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">raw_extension</td><td valign="top">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">url</td><td valign="top">:</td><td><div>/30thdec/default/hotel_search</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">utcnow</td><td valign="top">:</td><td><div>datetime.datetime(2013, 11, 30, 21, 53, 5, 202674)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">uuid</td><td valign="top">:</td><td><div>30thdec/127.0.0.1.2013-12-01.03-23-05.8fd93bc8-19c9-41f9-9642-d7da99691fee</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">vars</td><td valign="top">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi</td><td valign="top">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top">environ</td><td valign="top">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top">HTTP_ACCEPT</td><td valign="top">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">HTTP_ACCEPT_ENCODING</td><td valign="top">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">HTTP_ACCEPT_LANGUAGE</td><td valign="top">:</td><td><div>en-US,en;q=0.5</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">HTTP_CONNECTION</td><td valign="top">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">HTTP_COOKIE</td><td valign="top">:</td><td><div>session_id_welcome=127.0.0.1-c63f5852-b879-4d31-8498-3e92558143c3; session_id_admin=127.0.0.1-4e758c3f-41dd-4e62-860d-66066d7217fa; session_id_30thdec=127.0.0.1-6010333f-1e35-4746-940a-92d8f9478d29</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">HTTP_HOST</td><td valign="top">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">HTTP_USER_AGENT</td><td valign="top">:</td><td><div>Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:20.0) Gecko/20100101 Firefox/20.0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">PATH_INFO</td><td valign="top">:</td><td><div>/30thdec/default/hotel_search</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">QUERY_STRING</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">REMOTE_ADDR</td><td valign="top">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">REMOTE_PORT</td><td valign="top">:</td><td><div>47778</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">REQUEST_METHOD</td><td valign="top">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">REQUEST_URI</td><td valign="top">:</td><td><div>/30thdec/default/hotel_search</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">SCRIPT_NAME</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">SERVER_NAME</td><td valign="top">:</td><td><div>mohanty-Inspiron-N5110</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">SERVER_PORT</td><td valign="top">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">SERVER_PROTOCOL</td><td valign="top">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">SERVER_SOFTWARE</td><td valign="top">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi.errors</td><td valign="top">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x7f927d5be1e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi.file_wrapper</td><td valign="top">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x288cd50&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi.input</td><td valign="top">:</td><td><div>&lt;cStringIO.StringO object at 0x7f925c565880&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi.multiprocess</td><td valign="top">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi.multithread</td><td valign="top">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi.run_once</td><td valign="top">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi.url_scheme</td><td valign="top">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">wsgi.version</td><td valign="top">:</td><td><div>1</div></td></tr></table></div></td></tr></table></div></td></tr></table></div>'
+tRp58
+sS'frames'
+p59
+(lp60
+(dp61
+S'file'
+p62
+S'/home/mohanty/web2py/gluon/restricted.py'
+p63
+sS'dump'
+p64
+(dp65
+S'environment'
+p66
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, 'CAT': <class 'gluon.html.CAT'>, 'CENTER': <class 'gluon.html.CENTER'>, ...}"
+p67
+sS'ccode'
+p68
+S'<code object <module> at 0x7f9238343230, file "/...30thdec/views/default/hotel_search.html", line 1>'
+p69
+ssS'lnum'
+p70
+I212
+sS'lines'
+p71
+(dp72
+I207
+S'    try:'
+p73
+sI208
+S'        if isinstance(code, types.CodeType):'
+p74
+sI209
+S'            ccode = code'
+p75
+sI210
+S'        else:'
+p76
+sI211
+S'            ccode = compile2(code, layer)'
+p77
+sI212
+S'        exec ccode in environment'
+p78
+sI213
+S'    except HTTP:'
+p79
+sI214
+S'        raise'
+p80
+sI215
+S'    except RestrictedError:'
+p81
+sI216
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p82
+ssS'call'
+p83
+S'(code=\'response.write(\\\'<!DOCTYPE html>\\\\n<html lang="en"...(\\\'"></script>\\\\n</body>\\\\n</html>\\\\n\\\', escape=False)\', environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, \'CAT\': <class \'gluon.html.CAT\'>, \'CENTER\': <class \'gluon.html.CENTER\'>, ...}, layer=\'/home/mohanty/web2py/applications/30thdec/views/default/hotel_search.html\')'
+p84
+sS'func'
+p85
+S'restricted'
+p86
+sa(dp87
+g62
+S'/home/mohanty/web2py/applications/30thdec/views/default/hotel_search.html'
+p88
+sg64
+(dp89
+sg70
+I46
+sg71
+(dp90
+I37
+S"response.files.insert(3,URL('static','js/web2py.js'))"
+p91
+sI38
+S'response.include_meta()'
+p92
+sI39
+S'response.include_files()'
+p93
+sI40
+S"response.write('\\n', escape=False)"
+p94
+sI41
+S'response.write(\'\\n</head>\\n\\n<body>\\n\\n                                <div class="flash">\', escape=False)'
+p95
+sI42
+S"response.write(response.flash or '')"
+p96
+sI43
+S'response.write(\'</div>\\n<!--==============================header=================================-->\\n<header class="p0">\\n    <div class="container">\\n    \\t<div class="row">\\n        \\t<div class="span12">\\n            \\t\\n            \\t<div class="header-block clearfix">\\n                    <div class="clearfix header-block-pad">\\n                        <h1 class="brand"><a href="\', escape=False)'
+p97
+sI44
+S"response.write(URL('static','css_template/index.html'))"
+p98
+sI45
+S'response.write(\'"><!--<img src="img/logo.png" alt="">--><h3 style="color:lightblue">Traveller\\\'s Paradise</h3></a><span>Cuz the world is just so ... AWESOME!!</span></h1><span style="float:right;"><table class="headprofile" cellspacing="10px">\\n                        <tr>\\n                            <td><a href="#">User Profile</a></td>\\n                            <td><a href="#">Previous Bookings</a></td>\\n                            <td><a href="#">Logout</a></td>\\n                        </tr>\\n                        </table>\\n                        <!--<span class="contacts">Call Us Toll Free:  <span>+1 234 567 89 90</span><br>E-mail: <a href="#">company@demolink.org</a></span>-->\\n                    </div>\\n                    <div class="navbar navbar_ clearfix">\\n                        <div class="navbar-inner navbar-inner_">\\n                            <div class="container">\\n                                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse_">MENU</a>                                                   \\n                                <!--Menu-BAR -->\\n                                <div class="nav-collapse nav-collapse_ collapse">\\n                                \\n                                    <ul class="nav sf-menu">\\n                                      \', escape=False)'
+p99
+sI46
+S'if fieldbx==1:'
+p100
+sI47
+S'    response.write(\'\\n                                      <li class="active li-first"><a href="#">Flights</a></li>\\n                                        <li><a href="index-1.html">Trains</a></li>\\n                                          <li><a href="#">Buses</a></li>\\n                                          <li><a href="#">Hotels</a></li>\\n                                        <li><a href="#">Package Deals</a></li>\\n                                        \', escape=False)'
+p101
+sI48
+S'elif fieldbx==4:'
+p102
+sI49
+S'    response.write(\'\\n                                        <li ><a href="#">Flights</a></li>\\n                                        <li><a href="index-1.html">Trains</a></li>\\n                                          <li><a href="#">Buses</a></li>\\n                                          <li class="active li-first"><a href="#">Hotels</a></li>\\n                                        <li><a href="#">Package Deals</a></li>\\n                                        \', escape=False)'
+p103
+sI50
+S'else:'
+p104
+sI51
+S'    response.write(\'\\n                                        <li class="active li-first"><a href="#">Flights</a></li>\\n                                        <li><a href="index-1.html">Trains</a></li>\\n                                          <li><a href="#">Buses</a></li>\\n                                          <li><a href="#">Hotels</a></li>\\n                                        <li><a href="#">Package Deals</a></li>\\n                                        \', escape=False)'
+p105
+sI52
+S'    pass'
+p106
+sI53
+S'response.write(\'\\n                                        </ul>\\n                                      \\n                                </div>\\n                                <!--SOCIAL LINKS ICONS SIDESECTION By Jigar-->\\n                                <!--<ul class="social-icons">\\n                                    <li><a href="#"><img src="img/icon-1.png" alt=""></a></li>\\n                                    <li><a href="#"><img src="img/icon-2.png" alt=""></a></li>\\n                                    <li><a href="#"><img src="img/icon-3.png" alt=""></a></li>\\n                                    <li><a href="#"><img src="img/icon-4.png" alt=""></a></li>\\n                                </ul>-->\\n                            </div>\\n                        </div>\\n                     </div>   \\n                </div>\\n            </div>\\n         </div>   \\n    </div>\\n    <div class="slider">\\n    <div class="camera_wrap">\\n        <div data-src="\', escape=False)'
+p107
+sI54
+S"response.write(URL('static','images/1st.jpg'))"
+p108
+sI55
+S'response.write(\'"></div>\\n        <div data-src="\', escape=False)'
+p109
+sI56
+S"response.write(URL('static','images/2nd.jpg'))"
+p110
+ssg83
+S'()'
+p111
+sg85
+S'<module>'
+p112
+sasS'pyver'
+p113
+S'Python 2.7.4: /usr/bin/python (prefix: /usr)'
+p114
+sS'session'
+p115
+g57
+(S's\x00\x02\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top">date</td><td valign="top">:</td><td><div>2013-12-18</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">flash</td><td valign="top">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">last_orderby</td><td valign="top">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">last_query</td><td valign="top">:</td><td><div>db.hotels.id&gt;0</div></td></tr></table></div>'
+tRp116
+sS'etype'
+p117
+S"<type 'exceptions.NameError'>"
+p118
+sS'date'
+p119
+S'Sun Dec  1 03:23:06 2013'
+p120
+sS'response'
+p121
+g57
+(S's\xec/\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top">body</td><td valign="top">:</td><td><div>&lt;cStringIO.StringO object at 0x7f925c565fb8&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">cookies</td><td valign="top">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top">session_id_30thdec</td><td valign="top">:</td><td><div>127.0.0.1-6010333f-1e35-4746-940a-92d8f9478d29<table><tr><td style="font-weight:bold;vertical-align:top">comment</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">domain</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">expires</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">httponly</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">max-age</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">path</td><td valign="top">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">secure</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">version</td><td valign="top">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">delimiters</td><td valign="top">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">files</td><td valign="top">:</td><td><div><table><tr><td><div>/30thdec/static/js/jquery.js</div></td></tr><tr><td><div>/30thdec/static/css/calendar.css</div></td></tr><tr><td><div>/30thdec/static/js/calendar.js</div></td></tr><tr><td><div>/30thdec/static/js/web2py.js</div></td></tr><tr><td><div>/30thdec/static/css_template/css/bootstrap.css</div></td></tr><tr><td><div>/30thdec/static/css_template/css/responsive.css</div></td></tr><tr><td><div>/30thdec/static/css_template/css/camera.css</div></td></tr><tr><td><div>/30thdec/static/css_template/css/style.css</div></td></tr><tr><td><div>/30thdec/static/css_template/js/jquery.js</div></td></tr><tr><td><div>/30thdec/static/css_template/js/jquery.easing.1.3.js</div></td></tr><tr><td><div>/30thdec/static/css_template/js/camera.js</div></td></tr><tr><td><div>/30thdec/static/css_template/js/jquery.ui.totop.js</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">flash</td><td valign="top">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">generic_patterns</td><td valign="top">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">google_analytics_id</td><td valign="top">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">headers</td><td valign="top">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top">X-Powered-By</td><td valign="top">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">logo</td><td valign="top">:</td><td><div><a class="brand" href="http://www.web2py.com/"><b>web<span>2</span>py</b>&trade;&nbsp;</a></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">menu</td><td valign="top">:</td><td><div><table><tr><td><div><table><tr><td><div>Home</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/30thdec/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div><span class="highlighted">web2py</span></div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>My Sites</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/site</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>This App</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/design/30thdec</div></td></tr><tr><td><div>[(&lt;lazyT &#x27;Controller&#x27;&gt;, False, &#x27;/admin/default/edit/30thdec/controllers/default.py&#x27;), (&lt;lazyT &#x27;View&#x27;&gt;, False, &#x27;/admin/default/edit/30thdec/views/default/hotel_search.html&#x27;), (&lt;lazyT &#x27;Layout&#x27;&gt;, False, &#x27;/admin/default/edit/30thdec/views/layout.html&#x27;), (&lt;lazyT &#x27;Stylesheet&#x27;&gt;, False, &#x27;/admin/default/edit/30thdec/static/css/web2py.css&#x27;), (&lt;lazyT &#x27;DB Model&#x27;&gt;, False, &#x27;/admin/default/edit/30thdec/models/db.py&#x27;), (&lt;lazyT &#x27;Menu Model&#x27;&gt;, False, &#x27;/admin/default/edit/30thdec/models/menu.py&#x27;), (&lt;lazyT &#x27;Database&#x27;&gt;, False, &#x27;/30thdec/appadmin/index&#x27;), (&lt;lazyT &#x27;Errors&#x27;&gt;, False, &#x27;/admin/default/errors/30thdec&#x27;), (&lt;lazyT &#x27;About&#x27;&gt;, False, &#x27;/admin/default/about/30thdec&#x27;)]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>web2py.com</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com</div></td></tr><tr><td><div>[(&lt;lazyT &#x27;Download&#x27;&gt;, False, &#x27;http://www.web2py.com/examples/default/download&#x27;), (&lt;lazyT &#x27;Support&#x27;&gt;, False, &#x27;http://www.web2py.com/examples/default/support&#x27;), (&lt;lazyT &#x27;Demo&#x27;&gt;, False, &#x27;http://web2py.com/demo_admin&#x27;), (&lt;lazyT &#x27;Quick Examples&#x27;&gt;, False, &#x27;http://web2py.com/examples/default/examples&#x27;), (&lt;lazyT &#x27;FAQ&#x27;&gt;, False, &#x27;http://web2py.com/AlterEgo&#x27;), (&lt;lazyT &#x27;Videos&#x27;&gt;, False, &#x27;http://www.web2py.com/examples/default/videos/&#x27;), (&lt;lazyT &#x27;Free Applications&#x27;&gt;, False, &#x27;http://web2py.com/appliances&#x27;), (&lt;lazyT &#x27;Plugins&#x27;&gt;, False, &#x27;http://web2py.com/plugins&#x27;), (&lt;lazyT &#x27;Layouts&#x27;&gt;, False, &#x27;http://web2py.com/layouts&#x27;), (&lt;lazyT &#x27;Recipes&#x27;&gt;, False, &#x27;http://web2pyslices.com/&#x27;), (&lt;lazyT &#x27;Semantic&#x27;&gt;, False, &#x27;http://web2py.com/semantic&#x27;)]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Documentation</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book</div></td></tr><tr><td><div>[(&lt;lazyT &#x27;Preface&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/00&#x27;), (&lt;lazyT &#x27;Introduction&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/01&#x27;), (&lt;lazyT &#x27;Python&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/02&#x27;), (&lt;lazyT &#x27;Overview&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/03&#x27;), (&lt;lazyT &#x27;The Core&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/04&#x27;), (&lt;lazyT &#x27;The Views&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/05&#x27;), (&lt;lazyT &#x27;Database&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/06&#x27;), (&lt;lazyT &#x27;Forms and Validators&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/07&#x27;), (&lt;lazyT &#x27;Email and SMS&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/08&#x27;), (&lt;lazyT &#x27;Access Control&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/09&#x27;), (&lt;lazyT &#x27;Services&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/10&#x27;), (&lt;lazyT &#x27;Ajax Recipes&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/11&#x27;), (&lt;lazyT &#x27;Components and Plugins&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/12&#x27;), (&lt;lazyT &#x27;Deployment Recipes&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/13&#x27;), (&lt;lazyT &#x27;Other Recipes&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/14&#x27;), (&lt;lazyT &#x27;Buy this book&#x27;&gt;, False, &#x27;http://stores.lulu.com/web2py&#x27;)]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Community</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>None</div></td></tr><tr><td><div>[(&lt;lazyT &#x27;Groups&#x27;&gt;, False, &#x27;http://www.web2py.com/examples/default/usergroups&#x27;), (&lt;lazyT &#x27;Twitter&#x27;&gt;, False, &#x27;http://twitter.com/web2py&#x27;), (&lt;lazyT &#x27;Live Chat&#x27;&gt;, False, &#x27;http://webchat.freenode.net/?channels=web2py&#x27;)]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>None</div></td></tr><tr><td><div>[(&#x27;plugin_wiki&#x27;, False, &#x27;http://web2py.com/examples/default/download&#x27;), (&lt;lazyT &#x27;Other Plugins&#x27;&gt;, False, &#x27;http://web2py.com/plugins&#x27;), (&lt;lazyT &#x27;Layout Plugins&#x27;&gt;, False, &#x27;http://web2py.com/layouts&#x27;)]</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">meta</td><td valign="top">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top">author</td><td valign="top">:</td><td><div>Your Name &lt;you@example.com&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">description</td><td valign="top">:</td><td><div>a cool new app</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">generator</td><td valign="top">:</td><td><div>Web2py Web Framework</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">keywords</td><td valign="top">:</td><td><div>web2py, python, framework</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">models_to_run</td><td valign="top">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/hotel_search/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">postprocessing</td><td valign="top">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top">session_cookie_expires</td><td valign="top">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">session_data_name</td><td valign="top">:</td><td><div>session_data_30thdec</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">session_file</td><td valign="top">:</td><td><div>&lt;open file &#x27;/home/mohanty/web2py/applications/30thdec/sessions/127.0.0.1-6010333f-1e35-4746-940a-92d8f9478d29&#x27;, mode &#x27;rb+&#x27; at 0x7f92600d38a0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">session_filename</td><td valign="top">:</td><td><div>/home/mohanty/web2py/applications/30thdec/sessions/127.0.0.1-6010333f-1e35-4746-940a-92d8f9478d29</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">session_id</td><td valign="top">:</td><td><div>127.0.0.1-6010333f-1e35-4746-940a-92d8f9478d29</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">session_id_name</td><td valign="top">:</td><td><div>session_id_30thdec</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">session_locked</td><td valign="top">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">session_new</td><td valign="top">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">session_storage_type</td><td valign="top">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">status</td><td valign="top">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">subtitle</td><td valign="top">:</td><td><div>customize me!</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">title</td><td valign="top">:</td><td><div>30Thdec</div></td></tr><tr><td style="font-weight:bold;vertical-align:top">view</td><td valign="top">:</td><td><div>default/hotel_search.html</div></td></tr></table></div>'
+tRp122
+sS'locals'
+p123
+(dp124
+S'Service'
+p125
+S"<class 'gluon.tools.Service'>"
+p126
+sS'OBJECT'
+p127
+S"<class 'gluon.html.OBJECT'>"
+p128
+sS'SQLDB'
+p129
+S"<class 'gluon.dal.DAL'>"
+p130
+sg115
+S"<Storage {'last_query': 'db.hotels.id>0', 'flash...ssion_hash': '6a3a670264274eb5b65fbb338397f69b'}>"
+p131
+sS'LINK'
+p132
+S"<class 'gluon.html.LINK'>"
+p133
+sS'BR'
+p134
+S"<class 'gluon.html.BR'>"
+p135
+sS'local_import'
+p136
+S'<function <lambda>>'
+p137
+sS'OPTGROUP'
+p138
+S"<class 'gluon.html.OPTGROUP'>"
+p139
+sS'__package__'
+p140
+S'None'
+p141
+sS'PRE'
+p142
+S"<class 'gluon.html.PRE'>"
+p143
+sS'IS_INT_IN_RANGE'
+p144
+S"<class 'gluon.validators.IS_INT_IN_RANGE'>"
+p145
+sS'IS_LOWER'
+p146
+S"<class 'gluon.validators.IS_LOWER'>"
+p147
+sS'IS_STRONG'
+p148
+S"<class 'gluon.validators.IS_STRONG'>"
+p149
+sS'cache'
+p150
+S'<gluon.cache.Cache object>'
+p151
+sS'IS_IN_DB'
+p152
+S"<class 'gluon.validators.IS_IN_DB'>"
+p153
+sS'TAG'
+p154
+S'<gluon.html.__TAG__ object>'
+p155
+sS'SQLField'
+p156
+S"<class 'gluon.dal.Field'>"
+p157
+sS'mail'
+p158
+S'<gluon.tools.Mail object>'
+p159
+sS'BODY'
+p160
+S"<class 'gluon.html.BODY'>"
+p161
+sS'IS_DATE_IN_RANGE'
+p162
+S"<class 'gluon.validators.IS_DATE_IN_RANGE'>"
+p163
+sS'IFRAME'
+p164
+S"<class 'gluon.html.IFRAME'>"
+p165
+sS'URL'
+p166
+S'<function URL>'
+p167
+sS'__file__'
+p168
+S"'/home/mohanty/web2py/applications/30thdec/views/default/hotel_search.html'"
+p169
+sS'db'
+p170
+S'<DAL uri="sqlite://storage.sqlite">'
+p171
+sS'auth'
+p172
+S'<gluon.tools.Auth object>'
+p173
+sS'P'
+S"<class 'gluon.html.P'>"
+p174
+sS'TFOOT'
+p175
+S"<class 'gluon.html.TFOOT'>"
+p176
+sS'XHTML'
+p177
+S"<class 'gluon.html.XHTML'>"
+p178
+sS'ON'
+p179
+S'True'
+p180
+sS'OL'
+p181
+S"<class 'gluon.html.OL'>"
+p182
+sS'TEXTAREA'
+p183
+S"<class 'gluon.html.TEXTAREA'>"
+p184
+sS'MENU'
+p185
+S"<class 'gluon.html.MENU'>"
+p186
+sS'IS_IMAGE'
+p187
+S"<class 'gluon.validators.IS_IMAGE'>"
+p188
+sS'EM'
+p189
+S"<class 'gluon.html.EM'>"
+p190
+sS'CODE'
+p191
+S"<class 'gluon.html.CODE'>"
+p192
+sS'HTTP'
+p193
+S"<class 'gluon.http.HTTP'>"
+p194
+sS'HR'
+p195
+S"<class 'gluon.html.HR'>"
+p196
+sS'IS_DATETIME'
+p197
+S"<class 'gluon.validators.IS_DATETIME'>"
+p198
+sS'STYLE'
+p199
+S"<class 'gluon.html.STYLE'>"
+p200
+sS'LABEL'
+p201
+S"<class 'gluon.html.LABEL'>"
+p202
+sS'CLEANUP'
+p203
+S"<class 'gluon.validators.CLEANUP'>"
+p204
+sS'plugins'
+p205
+S'<gluon.tools.PluginManager object>'
+p206
+sS'SELECT'
+p207
+S"<class 'gluon.html.SELECT'>"
+p208
+sS'use_janrain'
+p209
+S'<function use_janrain>'
+p210
+sS'CENTER'
+p211
+S"<class 'gluon.html.CENTER'>"
+p212
+sS'prettydate'
+p213
+S'<function prettydate>'
+p214
+sS'Crud'
+p215
+S"<class 'gluon.tools.Crud'>"
+p216
+sS'Auth'
+p217
+S"<class 'gluon.tools.Auth'>"
+p218
+sS'DEVELOPMENT_MENU'
+p219
+g180
+sS'__builtins__'
+p220
+S"{'ArithmeticError': <type 'exceptions.ArithmeticError'>, 'AssertionError': <type 'exceptions.AssertionError'>, 'AttributeError': <type 'exceptions.AttributeError'>, 'BaseException': <type 'exceptions.BaseException'>, 'BufferError': <type 'exceptions.BufferError'>, 'BytesWarning': <type 'exceptions.BytesWarning'>, 'DeprecationWarning': <type 'exceptions.DeprecationWarning'>, 'EOFError': <type 'exceptions.EOFError'>, 'Ellipsis': Ellipsis, 'EnvironmentError': <type 'exceptions.EnvironmentError'>, ...}"
+p221
+sS'HTML'
+p222
+S"<class 'gluon.html.HTML'>"
+p223
+sS'SQLFORM'
+p224
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p225
+sS'LOAD'
+p226
+S'<function LOAD>'
+p227
+sS'redirect'
+p228
+S'<function redirect>'
+p229
+sS'FIELDSET'
+p230
+S"<class 'gluon.html.FIELDSET'>"
+p231
+sS'IS_EQUAL_TO'
+p232
+S"<class 'gluon.validators.IS_EQUAL_TO'>"
+p233
+sS'embed64'
+p234
+S'<function embed64>'
+p235
+sS'IS_LIST_OF'
+p236
+S"<class 'gluon.validators.IS_LIST_OF'>"
+p237
+sS'INPUT'
+p238
+S"<class 'gluon.html.INPUT'>"
+p239
+sS'EMBED'
+p240
+S"<class 'gluon.html.EMBED'>"
+p241
+sS'_'
+S'<function _>'
+p242
+sS'H2'
+p243
+S"<class 'gluon.html.H2'>"
+p244
+sS'H3'
+p245
+S"<class 'gluon.html.H3'>"
+p246
+sS'BUTTON'
+p247
+S"<class 'gluon.html.BUTTON'>"
+p248
+sS'H1'
+p249
+S"<class 'gluon.html.H1'>"
+p250
+sS'H6'
+p251
+S"<class 'gluon.html.H6'>"
+p252
+sS'H4'
+p253
+S"<class 'gluon.html.H4'>"
+p254
+sS'H5'
+p255
+S"<class 'gluon.html.H5'>"
+p256
+sS'UL'
+p257
+S"<class 'gluon.html.UL'>"
+p258
+sS'IS_UPPER'
+p259
+S"<class 'gluon.validators.IS_UPPER'>"
+p260
+sS'xmlescape'
+p261
+S'<function xmlescape>'
+p262
+sS'IS_TIME'
+p263
+S"<class 'gluon.validators.IS_TIME'>"
+p264
+sS'OPTION'
+p265
+S"<class 'gluon.html.OPTION'>"
+p266
+sS'TITLE'
+p267
+S"<class 'gluon.html.TITLE'>"
+p268
+sS'CRYPT'
+p269
+S"<class 'gluon.validators.CRYPT'>"
+p270
+sS'IS_EMPTY_OR'
+p271
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p272
+sS'MARKMIN'
+p273
+S"<class 'gluon.html.MARKMIN'>"
+p274
+sS'__name__'
+p275
+S"'__restricted__'"
+p276
+sS'STRONG'
+p277
+S"<class 'gluon.html.STRONG'>"
+p278
+sS'COL'
+p279
+S"<class 'gluon.html.COL'>"
+p280
+sS'service'
+p281
+S'<gluon.tools.Service object>'
+p282
+sS'SCRIPT'
+p283
+S"<class 'gluon.html.SCRIPT'>"
+p284
+sS'TABLE'
+p285
+S"<class 'gluon.html.TABLE'>"
+p286
+sS'IS_IPV4'
+p287
+S"<class 'gluon.validators.IS_IPV4'>"
+p288
+sS'IS_LENGTH'
+p289
+S"<class 'gluon.validators.IS_LENGTH'>"
+p290
+sS'IS_IPV6'
+p291
+S"<class 'gluon.validators.IS_IPV6'>"
+p292
+sS'XML'
+p293
+S"<class 'gluon.html.XML'>"
+p294
+sS'B'
+S"<class 'gluon.html.B'>"
+p295
+sS'IMG'
+p296
+S"<class 'gluon.html.IMG'>"
+p297
+sS'SQLTABLE'
+p298
+S"<class 'gluon.sqlhtml.SQLTABLE'>"
+p299
+sS'IS_MATCH'
+p300
+S"<class 'gluon.validators.IS_MATCH'>"
+p301
+sS'IS_ALPHANUMERIC'
+p302
+S"<class 'gluon.validators.IS_ALPHANUMERIC'>"
+p303
+sS'SPAN'
+p304
+S"<class 'gluon.html.SPAN'>"
+p305
+sS'IS_JSON'
+p306
+S"<class 'gluon.validators.IS_JSON'>"
+p307
+sS'IS_IPADDRESS'
+p308
+S"<class 'gluon.validators.IS_IPADDRESS'>"
+p309
+sS'IS_SLUG'
+p310
+S"<class 'gluon.validators.IS_SLUG'>"
+p311
+sS'BEAUTIFY'
+p312
+S"<class 'gluon.html.BEAUTIFY'>"
+p313
+sS'META'
+p314
+S"<class 'gluon.html.META'>"
+p315
+sS'IS_DATE'
+p316
+S"<class 'gluon.validators.IS_DATE'>"
+p317
+sS'IS_EMAIL'
+p318
+S"<class 'gluon.validators.IS_EMAIL'>"
+p319
+sS'IS_NOT_EMPTY'
+p320
+S"<class 'gluon.validators.IS_NOT_EMPTY'>"
+p321
+sS'IS_FLOAT_IN_RANGE'
+p322
+S"<class 'gluon.validators.IS_FLOAT_IN_RANGE'>"
+p323
+sS'TBODY'
+p324
+S"<class 'gluon.html.TBODY'>"
+p325
+sS'CAT'
+p326
+S"<class 'gluon.html.CAT'>"
+p327
+sS'Field'
+p328
+S"<class 'gluon.dal.Field'>"
+p329
+sS'DIV'
+p330
+S"<class 'gluon.html.DIV'>"
+p331
+sS'LEGEND'
+p332
+S"<class 'gluon.html.LEGEND'>"
+p333
+sS'form'
+p334
+S'<gluon.sqlhtml.SQLFORM object>'
+p335
+sS'COLGROUP'
+p336
+S"<class 'gluon.html.COLGROUP'>"
+p337
+sS'DAL'
+p338
+S"<class 'gluon.dal.DAL'>"
+p339
+sS'TT'
+p340
+S"<class 'gluon.html.TT'>"
+p341
+sS'TR'
+p342
+S"<class 'gluon.html.TR'>"
+p343
+sS'LI'
+p344
+S"<class 'gluon.html.LI'>"
+p345
+sS'TH'
+p346
+S"<class 'gluon.html.TH'>"
+p347
+sS'TD'
+p348
+S"<class 'gluon.html.TD'>"
+p349
+sS'PluginManager'
+p350
+S"<class 'gluon.tools.PluginManager'>"
+p351
+sS'IS_URL'
+p352
+S"<class 'gluon.validators.IS_URL'>"
+p353
+sS'A'
+S"<class 'gluon.html.A'>"
+p354
+sS'HEAD'
+p355
+S"<class 'gluon.html.HEAD'>"
+p356
+sS'IS_DATETIME_IN_RANGE'
+p357
+S"<class 'gluon.validators.IS_DATETIME_IN_RANGE'>"
+p358
+sS'FORM'
+p359
+S"<class 'gluon.html.FORM'>"
+p360
+sS'I'
+S"<class 'gluon.html.I'>"
+p361
+sS'crud'
+p362
+S'<gluon.tools.Crud object>'
+p363
+sS'IS_NOT_IN_DB'
+p364
+S"<class 'gluon.validators.IS_NOT_IN_DB'>"
+p365
+sg121
+S"<Storage {'body': <cStringIO.StringO object at 0...2600f6c80>, 'view': 'default/hotel_search.html'}>"
+p366
+sS'THEAD'
+p367
+S"<class 'gluon.html.THEAD'>"
+p368
+sS'ANY_OF'
+p369
+S"<class 'gluon.validators.ANY_OF'>"
+p370
+sS'IS_NULL_OR'
+p371
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p372
+sg56
+S"<Storage {'function': 'hotel_search', 'body': <c...plications/30thdec/', 'post_vars': <Storage {}>}>"
+p373
+sS'IS_EXPR'
+p374
+S"<class 'gluon.validators.IS_EXPR'>"
+p375
+sS'T'
+S'<gluon.languages.translator object>'
+p376
+sS'IS_IN_SET'
+p377
+S"<class 'gluon.validators.IS_IN_SET'>"
+p378
+sS'IS_UPLOAD_FILENAME'
+p379
+S"<class 'gluon.validators.IS_UPLOAD_FILENAME'>"
+p380
+sS'IS_DECIMAL_IN_RANGE'
+p381
+S"<class 'gluon.validators.IS_DECIMAL_IN_RANGE'>"
+p382
+sssS'traceback'
+p383
+S'Traceback (most recent call last):\n  File "/home/mohanty/web2py/gluon/restricted.py", line 212, in restricted\n    exec ccode in environment\n  File "/home/mohanty/web2py/applications/30thdec/views/default/hotel_search.html", line 46, in <module>\nNameError: name \'fieldbx\' is not defined\n'
+p384
+s.

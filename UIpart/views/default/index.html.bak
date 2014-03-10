@@ -1,0 +1,88 @@
+{{extend 'layout.html'}}
+<html>
+    <head>
+       
+        <script>
+
+	$('#myModal').modal()
+
+        </script>
+<style>
+    .PageForm tr td{
+        font-weight:bold;
+        font-size:16px;
+        
+        }
+        
+  
+        </style>
+    </head>
+
+    <body>
+
+        <div class="myBody">
+            <br><br/>
+            <center><h3 style="margin:auto;color:#08686B"> Search for Flights </h3></center>
+          
+<div><center>{{=form.custom.begin}}
+    <table class="PageForm">
+    <tr>
+        <td><b>From</b></td> <td><b>To</b></td>
+        </tr>
+        <tr>
+            <td>{{=form.custom.widget.From}}</td><td>{{=form.custom.widget.To}}</td>
+        
+        </tr>
+        <tr>
+        <td>Date of Departure
+            </td>
+            <td>
+                Date of Return
+            </td></tr>
+        <tr>
+            <td>Class
+            </td>
+            <td>Number of Seats
+            </td>
+        </tr>
+        <tr>
+            <td>{{=form.custom.widget.d}}
+            </td>
+              <td>
+                  {{=form.custom.widget.d1}}
+            </td></tr><tr>
+            <td>{{=form.custom.widget.Class}}
+            </td><td>{{=form.custom.widget.seats}}
+            </td>
+            
+        </tr>
+    </table>
+    {{=form.custom.submit}}    
+    
+    {{=form.custom.end}}
+    </center>
+</div>
+
+
+<!--<a href="#myModal" role="button" class="btn btn-info" data-toggle="modal" style=>Search for a Trip</a>
+ 
+ Modal 
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="myModalLabel">Travel Details</h3>
+</div>
+<div class="modal-body">
+<p>{{=form}}</p>
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+</div>
+</div>-->
+         
+           
+        </div>
+
+    </body>
+</html>

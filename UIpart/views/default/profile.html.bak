@@ -1,0 +1,73 @@
+{{extend 'layout2.html'}}
+<head>
+<style>
+    .ProfileDisp tr td{
+        font-size:18px;
+        font-weight:normal;
+        padding:5px 5px;
+        color:#444444;
+    
+    }
+    .ModProf tr td{
+        font-size:16px;
+        
+    }
+         #auth_user_email__row,#auth_user_password__row{
+    display:none;
+     
+    }
+    </style>
+
+   
+     <script>
+
+	$('#myModal').modal()
+
+        </script>
+</head>
+<br/>
+<center><h3 style="color:#08686b;">Welcome {{=rec[0]['Username']}} to your Profile ,</h3></center>
+<br>
+<br>
+
+<div style="width:40%;margin:auto;box-shadow:0px 0 5px #f2f2f2;">
+    <a href="#myModal" role="button" data-toggle="modal" class="btn btn-info" style="float:right;">Edit &nbsp;<span class="icon icon-pencil"></span></a>
+<center><table class="ProfileDisp" style="">
+<tr>
+    <td >Name :</td><td> {{=rec[0]['first_name']}} {{=rec[0]['last_name']}}</td>
+    </tr>
+<tr>
+    <td >E-mail :</td><td> {{=rec[0]['email']}}</td>
+    </tr>
+    <tr>
+        <td >Username :</td><td> {{=rec[0]['Username']}}</td>
+    </tr>
+<tr>
+    <td >Phone :</td><td> {{=rec[0]['Phone']}}</td>
+    </tr>
+<tr>
+    <td >City :</td><td> {{=rec[0]['City']}}</td>
+    </tr>
+    <tr>
+        <td >Country :</td><td> {{=rec[0]['Country']}}</td>
+    </tr>
+</table>
+    </center>
+</div>
+<br/>
+<br/>
+
+
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="myModalLabel">Edit my Profile </h3>
+</div>
+<div class="modal-body">
+{{=form}}
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+</div>
+</div>

@@ -1,0 +1,817 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.TypeError'> list indices must be integers, not str"
+p3
+sS'layer'
+p4
+S'/home/prabhsimran/web2py/applications/UIpart/views/default/hotel_confirm.html'
+p5
+sS'code'
+p6
+S'response.write(\'<!DOCTYPE html>\\n<html lang="en">\\n<head>\\n    <title>Home</title>\\n    <meta charset="utf-8">\\n\\t<meta name="viewport" content="width=device-width, initial-scale=1.0">\\n    <meta name="description" content="Your description">\\n    <meta name="keywords" content="Your keywords">\\n    <meta name="author" content="Your name">\\n    <link rel="icon" href="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/favicon.ico\'))\nresponse.write(\'" type="image/x-icon">\\n    <link rel="shortcut icon" href="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/favicon.ico\'))\nresponse.write(\'" type="image/x-icon" />\\n    <link href=\\\'http://fonts.googleapis.com/css?family=Open+Sans:400,600,700\\\' rel=\\\'stylesheet\\\' type=\\\'text/css\\\'>\\n\\t<script type="text/javascript" src="\', escape=False)\nresponse.write(URL(\'static\',\'js/jquery.js\'))\nresponse.write(\'"></script>\\n    <script type="text/javascript" src="\', escape=False)\nresponse.write(URL(\'static\',\'js/jquery.easing.1.3.js\'))\nresponse.write(\'"></script>\\n\\t<script type="text/javascript" src="\', escape=False)\nresponse.write(URL(\'static\',\'js/camera.js\'))\nresponse.write(\'"></script>\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/js/jquery.ui.totop.js\'))\nresponse.write(\'" type="text/javascript"></script>\\n\\t<script>\\n      $(document).ready(function(){   \\n              jQuery(\\\'.camera_wrap\\\').camera();\\n        });    \\n\\t</script>\\t\\t\\n\\t<!--[if lt IE 8]>\\n  \\t\\t<div style=\\\'text-align:center\\\'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  \\n \\t<![endif]-->\\n  \\n  <!--[if (gt IE 9)|!(IE)]><!-->\\n  <script type="text/javascript" src="\', escape=False)\nresponse.write(URL(\'static\',\'js/jquery.mobile.customized.min.js\'))\nresponse.write(\'"></script>\\n  <!--<![endif]-->\\n  \\t<!--[if lt IE 9]>\\n    <link href=\\\'http://fonts.googleapis.com/css?family=Open+Sans:400\\\' rel=\\\'stylesheet\\\' type=\\\'text/css\\\'>\\n    <link href=\\\'http://fonts.googleapis.com/css?family=Open+Sans:600\\\' rel=\\\'stylesheet\\\' type=\\\'text/css\\\'>\\n    <link href=\\\'http://fonts.googleapis.com/css?family=Open+Sans:700\\\' rel=\\\'stylesheet\\\' type=\\\'text/css\\\'>\\n    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>\\n    <link rel="stylesheet" href="css/docs.css" type="text/css" media="screen">\\n    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">\\n  <![endif]-->\\n\', escape=False)\nresponse.files.append(URL(\'static\',\'css_template/css/bootstrap.css\'))\nresponse.files.append(URL(\'static\',\'css_template/css/responsive.css\'))\nresponse.files.append(URL(\'static\',\'css_template/css/camera.css\'))\nresponse.files.append(URL(\'static\',\'css_template/css/style.css\'))\nresponse.files.append(URL(\'static\',\'css_template/js/jquery.js\'))\nresponse.files.append(URL(\'static\',\'css_template/js/jquery.easing.1.3.js\'))\nresponse.files.append(URL(\'static\',\'css_template/js/camera.js\'))\nresponse.files.append(URL(\'static\',\'css_template/js/jquery.ui.totop.js\'))\nresponse.write(\'\\n\\n\', escape=False)\nresponse.write(\'<script type="text/javascript"><!--\\n    // These variables are used by the web2py_ajax_init function in web2py_ajax.js (which is loaded below).\\n    var w2p_ajax_confirm_message = "\', escape=False)\nresponse.write(T(\'Are you sure you want to delete this object?\'))\nresponse.write(\'";\\n    var w2p_ajax_date_format = "\', escape=False)\nresponse.write(T(\'%Y-%m-%d\'))\nresponse.write(\'";\\n    var w2p_ajax_datetime_format = "\', escape=False)\nresponse.write(T(\'%Y-%m-%d %H:%M:%S\'))\nresponse.write(\'";\\n    var ajax_error_500 = \\\'\', escape=False)\nresponse.write(XML(T(\'An error occured, please %s the page\') % A(T(\'reload\'), _href=URL(args=request.args, vars=request.get_vars))))\nresponse.write("\'\\n    //--></script>\\n", escape=False)\nresponse.files.insert(0,URL(\'static\',\'js/jquery.js\'))\nresponse.files.insert(1,URL(\'static\',\'css/calendar.css\'))\nresponse.files.insert(2,URL(\'static\',\'js/calendar.js\'))\nresponse.files.insert(3,URL(\'static\',\'js/web2py.js\'))\nresponse.include_meta()\nresponse.include_files()\nresponse.write(\'\\n\', escape=False)\nresponse.write(\'\\n    \\n</head>\\n\\n<body>\\n\\n                                <div class="flash">\', escape=False)\nresponse.write(response.flash or \'\')\nresponse.write(\'</div>\\n<!--==============================header=================================-->\\n<header class="p0">\\n    <div class="container">\\n    \\t<div class="row">\\n        \\t<div class="span12">\\n            \\t\\n            \\t<div class="header-block clearfix">\\n                    <div class="clearfix header-block-pad">\\n                        <h1 class="brand"><a href="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/index.html\'))\nresponse.write(\'"><!--<img src="img/logo.png" alt="">--><h3 style="color:lightblue">Traveller\\\'s Paradise</h3></a><span>Cuz the world is just so ... AWESOME!!</span></h1><span style="float:right;"><table class="headprofile" cellspacing="10px">\\n                        <tr>\\n                            <td><a href="\', escape=False)\nresponse.write(URL(\'profile\'))\nresponse.write(\'">User Profile</a></td>\\n                            <td><a href="\', escape=False)\nresponse.write(URL(\'viewbookings\'))\nresponse.write(\'">View Bookings</a></td>\\n                                                        \', escape=False)\nif auth.user_id>0:\n    response.write(\'\\n                            <td><a href="\', escape=False)\n    response.write(URL(\'default\',\'user\',args=\'logout\'))\n    response.write(\'">Logout</a></td>\\n                            \', escape=False)\nelse:\n    response.write(\'\\n                            <td><a href="\', escape=False)\n    response.write(URL(\'profile\'))\n    response.write(\'">Login</a></td>\\n                            \', escape=False)\n    pass\nresponse.write(\'\\n                            \\n                        </tr>\\n                        </table>\\n                        <!--<span class="contacts">Call Us Toll Free:  <span>+1 234 567 89 90</span><br>E-mail: <a href="#">company@demolink.org</a></span>-->\\n                    </div>\\n                    <div class="navbar navbar_ clearfix">\\n                        <div class="navbar-inner navbar-inner_">\\n                            <div class="container">\\n                                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse_">MENU</a>                                                   \\n                                <!--Menu-BAR -->\\n                                <div class="nav-collapse nav-collapse_ collapse">\\n                                \\n                                    <ul class="nav sf-menu">\\n                                      \', escape=False)\nif session.var==1:\n    response.write(\'\\n                                        <li class="active li-first"><a href="\', escape=False)\n    response.write(URL(\'index\'))\n    response.write(\'">Flights</a></li>\\n                                        <li ><a href="\', escape=False)\n    response.write(URL(\'railway\'))\n    response.write(\'">Trains</a></li>\\n                                          <li ><a href="\', escape=False)\n    response.write(URL(\'bus_booking\'))\n    response.write(\'">Buses</a></li>\\n                                          <li ><a href="\', escape=False)\n    response.write(URL(\'hotel_search\'))\n    response.write(\'">Hotels</a></li>\\n                                        <li><a href="#">Package Deals</a></li>\\n                                           \', escape=False)\nelif session.var==2:\n    response.write(\'\\n                                        <li ><a href="\', escape=False)\n    response.write(URL(\'index\'))\n    response.write(\'">Flights</a></li>\\n                                        <li class="active li-first"><a href="\', escape=False)\n    response.write(URL(\'railway\'))\n    response.write(\'">Trains</a></li>\\n                                          <li ><a href="\', escape=False)\n    response.write(URL(\'bus_booking\'))\n    response.write(\'">Buses</a></li>\\n                                          <li ><a href="\', escape=False)\n    response.write(URL(\'hotel_search\'))\n    response.write(\'">Hotels</a></li>\\n                                        <li><a href="#">Package Deals</a></li>\\n                                          \\n                                        \', escape=False)\nelif session.var==3:\n    response.write(\'\\n                                        <li ><a href="\', escape=False)\n    response.write(URL(\'index\'))\n    response.write(\'">Flights</a></li>\\n                                        <li><a href="\', escape=False)\n    response.write(URL(\'railway\'))\n    response.write(\'">Trains</a></li>\\n                                          <li class="active li-first"><a href="\', escape=False)\n    response.write(URL(\'bus_booking\'))\n    response.write(\'">Buses</a></li>\\n                                          <li ><a href="\', escape=False)\n    response.write(URL(\'hotel_search\'))\n    response.write(\'">Hotels</a></li>\\n                                        <li><a href="#">Package Deals</a></li>\\n                                        \', escape=False)\nelif session.var==4:\n    response.write(\'\\n                                        <li ><a href="\', escape=False)\n    response.write(URL(\'index\'))\n    response.write(\'">Flights</a></li>\\n                                        <li><a href="\', escape=False)\n    response.write(URL(\'railway\'))\n    response.write(\'">Trains</a></li>\\n                                          <li><a href="\', escape=False)\n    response.write(URL(\'bus_booking\'))\n    response.write(\'">Buses</a></li>\\n                                          <li class="active li-first"><a href="\', escape=False)\n    response.write(URL(\'hotel_search\'))\n    response.write(\'">Hotels</a></li>\\n                                        <li><a href="#">Package Deals</a></li>\\n                                        \', escape=False)\nelse:\n    response.write(\'\\n                                        <li class="active li-first"><a href="\', escape=False)\n    response.write(URL(\'index\'))\n    response.write(\'">Flights</a></li>\\n                                        <li><a href="\', escape=False)\n    response.write(URL(\'railway\'))\n    response.write(\'">Trains</a></li>\\n                                          <li><a href="\', escape=False)\n    response.write(URL(\'bus_booking\'))\n    response.write(\'">Buses</a></li>\\n                                          <li><a href="\', escape=False)\n    response.write(URL(\'hotel_search\'))\n    response.write(\'">Hotels</a></li>\\n                                        <li><a href="#">Package Deals</a></li>\\n                                        \', escape=False)\n    pass\nresponse.write(\'\\n                                        </ul>\\n                                      \\n                                </div>\\n                                <!--SOCIAL LINKS ICONS SIDESECTION By Jigar-->\\n                                <!--<ul class="social-icons">\\n                                    <li><a href="#"><img src="img/icon-1.png" alt=""></a></li>\\n                                    <li><a href="#"><img src="img/icon-2.png" alt=""></a></li>\\n                                    <li><a href="#"><img src="img/icon-3.png" alt=""></a></li>\\n                                    <li><a href="#"><img src="img/icon-4.png" alt=""></a></li>\\n                                </ul>-->\\n                            </div>\\n                        </div>\\n                     </div>   \\n                </div>\\n            </div>\\n         </div>   \\n    </div>\\n    <div class="slider">\\n    <div class="camera_wrap">\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'images/1st.jpg\'))\nresponse.write(\'"></div>\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'images/2nd.jpg\'))\nresponse.write(\'"></div>\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/slide3.jpg\'))\nresponse.write(\'"></div>\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/slide4.jpg\'))\nresponse.write(\'"></div>\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/slide5.jpg\'))\nresponse.write(\'"></div>\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/slide6.jpg\'))\nresponse.write(\'"></div>\\n        <div data-src="\', escape=False)\nresponse.write(URL(\'static\',\'css_template/img/slide7.jpg\'))\nresponse.write(\'"></div>\\n    </div>\\n</div>\\n</header>\\n\\n<section id="content" class="main-content">\\n\', escape=False)\nresponse.write(\'\\n<br/><br/>\\n<b>Hotel name : </b>\', escape=False)\nresponse.write(hotel[\'hotelName\'])\nresponse.write(\'<br/>\\n<b>Hotel address : </b>\', escape=False)\nresponse.write(hotel[\'hotelAddress\'])\nresponse.write(\', \', escape=False)\nresponse.write(hotel[\'hotelCity\'])\nresponse.write(\'<br/>\\n<b>Check-in : </b>\', escape=False)\nresponse.write(request.args(1))\nresponse.write(\'<br/>\\n<b>Check-out : </b>\', escape=False)\nresponse.write(request.args(2))\nresponse.write(\'<br/>\\n<b>Rooms : </b>\', escape=False)\nresponse.write(request.args(3))\nresponse.write(\'<br/>\\n<b>Room type description : </b>\', escape=False)\nresponse.write(fin[\'roomTypeDescription\'])\nresponse.write(\'<br/><br/>\\n<a href="\', escape=False)\nresponse.write(URL(r=request,f=\'booking_done\',args=(request.args(0),request.args(1),request.args(2),request.args(3),request.args(4))))\nresponse.write(\'"><button type="btn btn-primary">Book</button></a>\\n\\n\', escape=False)\nresponse.write(\'\\n<div class="container">\\n    <div class="row">\\n      <div class="span12">        \\n        <ul class="thumbnails">\\n          <li class="span4">\\n            <div class="thumbnail">\\n              <div class="caption">\\n              \\t<img src="img/img-1.png" alt="">\\n                <h5>Most</h5>\\n                <h3>popular</h3>\\n              </div>  \\n              <div class="thumbnail-pad">\\n                  <p>Praesent vestibulum molestie lacus. Aenean noy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. </p>\\n                  <a href="#" class="btn btn_">more info</a>\\n              </div>\\n            </div>\\n          </li>\\n          <li class="span4">\\n            <div class="thumbnail">\\n              <div class="caption">\\n              \\t<img src="img/img-2.png" alt="">\\n                <h5>Beauty</h5>\\n                <h3>Gifts</h3>\\n              </div>  \\n              <div class="thumbnail-pad">\\n                  <p>Praesent vestibulum molestie lacus. Aenean my hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. </p>\\n                  <a href="#" class="btn btn_">more info</a>\\n              </div>\\n            </div>\\n          </li>\\n          <li class="span4">\\n            <div class="thumbnail">\\n              <div class="caption">\\n              \\t<img src="img/img-4.png" alt="">\\n                <h5>Award-Winning</h5>\\n                <h3>Fragrances</h3>\\n              </div>\\n              <div class="thumbnail-pad">  \\n                  <p>Nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis.</p>\\n                  <a href="#" class="btn btn_">more info</a>\\n              </div>\\n            </div>\\n          </li>\\n        </ul>\\n      </div>\\n    </div>\\n</div>\\n  </section>\\n<footer>\\n   <div class="container">\\n    <div class="row">\\n      <div class="span4 float2">\\n        <form id="newsletter" method="post" >\\n            <label>Newsletter</label>\\n            <div class="clearfix">\\n                <input type="text" onFocus="if(this.value ==\\\'Enter e-mail here\\\' ) this.value=\\\'\\\'" onBlur="if(this.value==\\\'\\\') this.value=\\\'Enter e-mail here\\\'" value="Enter e-mail here" >\\n                <a href="#" onClick="document.getElementById(\\\'newsletter\\\').submit()" class="btn btn_">subscribe</a>\\n            </div>\\n        </form>\\n    </div>\\n    <div class="span8 float">\\n      \\t<ul class="footer-menu">\\n            \', escape=False)\nif session.var==4:\n    response.write(\'\\n            <li><a href="\', escape=False)\n    response.write(URL(\'index\'))\n    response.write(\'" >Flights</a>|</li>\\n            <li><a href="\', escape=False)\n    response.write(URL(\'railway\'))\n    response.write(\'">Trains</a>|</li>\\n            <li><a href="\', escape=False)\n    response.write(URL(\'bus_booking\'))\n    response.write(\'">Buses</a>|</li>\\n            <li><a href="\', escape=False)\n    response.write(URL(\'hotel_search\'))\n    response.write(\'" class="current">Hotels</a>|</li>\\n            <li><a href="index-4.html">Package Deals</a>|</li>\\n            \', escape=False)\nelif session.var==3:\n    response.write(\'\\n            <li><a href="\', escape=False)\n    response.write(URL(\'index\'))\n    response.write(\'">Flights</a>|</li>\\n            <li><a href="\', escape=False)\n    response.write(URL(\'railway\'))\n    response.write(\'">Trains</a>|</li>\\n            <li><a href="\', escape=False)\n    response.write(URL(\'bus_booking\'))\n    response.write(\'" class="current">Buses</a>|</li>\\n            <li><a href="\', escape=False)\n    response.write(URL(\'hotel_search\'))\n    response.write(\'">Hotels</a>|</li>\\n            <li><a href="index-4.html">Package Deals</a>|</li>\\n            \', escape=False)\nelif session.var==2:\n    response.write(\'\\n            <li><a href="\', escape=False)\n    response.write(URL(\'index\'))\n    response.write(\'">Flights</a>|</li>\\n            <li><a href="\', escape=False)\n    response.write(URL(\'railway\'))\n    response.write(\'"  class="current">Trains</a>|</li>\\n            <li><a href="\', escape=False)\n    response.write(URL(\'bus_booking\'))\n    response.write(\'">Buses</a>|</li>\\n            <li><a href="\', escape=False)\n    response.write(URL(\'hotel_search\'))\n    response.write(\'">Hotels</a>|</li>\\n            <li><a href="index-4.html">Package Deals</a>|</li>\\n            \', escape=False)\nelse:\n    response.write(\'\\n        \\t<li><a href="\', escape=False)\n    response.write(URL(\'index\'))\n    response.write(\'" class="current">Flights</a>|</li>\\n            <li><a href="\', escape=False)\n    response.write(URL(\'railway\'))\n    response.write(\'">Trains</a>|</li>\\n            <li><a href="\', escape=False)\n    response.write(URL(\'bus_booking\'))\n    response.write(\'">Buses</a>|</li>\\n            <li><a href="\', escape=False)\n    response.write(URL(\'hotel_search\'))\n    response.write(\'">Hotels</a>|</li>\\n            <li><a href="index-4.html">Package Deals</a>|</li>\\n            \', escape=False)\n    pass\nresponse.write(\'\\n            \\n        </ul>\\n      \\tCopyright &copy;  IIIT Hyderabad SSAD Team-9 <!-- {%FOOTER_LINK} -->\\n\\n<br />\\n        Joint efforts of<br/>\\n        <table>\\n            <tr><td>Ayush Khandelwal</td></tr><tr><td>Gaurav Mohanty</td></tr><tr><td>Jigar Thakkar</td></tr><tr><td>Prabhsimram Sing Baweja</td></tr>\\n            </table>\\n</div>\\n\\n\\n      </div>\\n    </div>\\n</footer>\\n<script type="text/javascript" src="\', escape=False)\nresponse.write(URL(\'static\',\'js/bootstrap.js\'))\nresponse.write(\'"></script>\\n</body>\\n</html>\\n\', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__hash__'
+p12
+S"<method-wrapper '__hash__' of exceptions.TypeError object>"
+p13
+sS'__setattr__'
+p14
+S"<method-wrapper '__setattr__' of exceptions.TypeError object>"
+p15
+sS'__reduce_ex__'
+p16
+S'<built-in method __reduce_ex__ of exceptions.TypeError object>'
+p17
+sS'__getslice__'
+p18
+S"<method-wrapper '__getslice__' of exceptions.TypeError object>"
+p19
+sS'__getitem__'
+p20
+S"<method-wrapper '__getitem__' of exceptions.TypeError object>"
+p21
+sS'__setstate__'
+p22
+S'<built-in method __setstate__ of exceptions.TypeError object>'
+p23
+sS'args'
+p24
+S"('list indices must be integers, not str',)"
+p25
+sS'__reduce__'
+p26
+S'<built-in method __reduce__ of exceptions.TypeError object>'
+p27
+sS'__str__'
+p28
+S"<method-wrapper '__str__' of exceptions.TypeError object>"
+p29
+sS'__format__'
+p30
+S'<built-in method __format__ of exceptions.TypeError object>'
+p31
+sS'__getattribute__'
+p32
+S"<method-wrapper '__getattribute__' of exceptions.TypeError object>"
+p33
+sS'__class__'
+p34
+S"<type 'exceptions.TypeError'>"
+p35
+sS'__unicode__'
+p36
+S'<built-in method __unicode__ of exceptions.TypeError object>'
+p37
+sS'__delattr__'
+p38
+S"<method-wrapper '__delattr__' of exceptions.TypeError object>"
+p39
+sS'__subclasshook__'
+p40
+S'<built-in method __subclasshook__ of type object>'
+p41
+sS'__repr__'
+p42
+S"<method-wrapper '__repr__' of exceptions.TypeError object>"
+p43
+sS'__dict__'
+p44
+S'{}'
+p45
+sS'__sizeof__'
+p46
+S'<built-in method __sizeof__ of exceptions.TypeError object>'
+p47
+sS'__doc__'
+p48
+S"'Inappropriate argument type.'"
+p49
+sS'__init__'
+p50
+S"<method-wrapper '__init__' of exceptions.TypeError object>"
+p51
+sS'__new__'
+p52
+S'<built-in method __new__ of type object>'
+p53
+ssS'evalue'
+p54
+S'list indices must be integers, not str'
+p55
+sS'request'
+p56
+cgluon.html
+XML_unpickle
+p57
+(S's\xdfa\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>UIpart</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>246309</div></td></tr><tr><td><div>2013-12-12</div></td></tr><tr><td><div>2013-12-17</div></td></tr><tr><td><div>2</div></td></tr><tr><td><div>img</div></td></tr><tr><td><div>img-4.png</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-c94c7c22-ebde-4e04-acfe-b4aa464af4ef<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_ssad</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-7830f68a-4544-4df4-b73b-e7749e80dcf1<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_uipart</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-f42be818-e2f8-4024-8fed-d86d80eacb8b<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-caa2744b-10eb-465b-a1eb-808c197b082a<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>image/png,image/*;q=0.8,*/*;q=0.5</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.5</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-caa2744b-10eb-465b-a1eb-808c197b082a; session_id_admin=127.0.0.1-c94c7c22-ebde-4e04-acfe-b4aa464af4ef; session_id_uipart=127.0.0.1-f42be818-e2f8-4024-8fed-d86d80eacb8b; session_id_ssad=127.0.0.1-7830f68a-4544-4df4-b73b-e7749e80dcf1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_REFERER</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/UIpart/default/hotel_confirm/246309/2013-12-12/2013-12-17/2/200191444</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/UIpart/default/hotel_confirm/246309/2013-12-12/2013-12-17/2/img/img-4.png</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>51253</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>prabhsimran-Inspiron-7520</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/home/prabhsimran/web2py/applications/welcome/&#x27;, &#x27;/home/prabhsimran/web2py/applications/admin/&#x27;, &#x27;/home/prabhsimran/web2py/applications/UIpart/&#x27;, &#x27;/home/prabhsimran/web2py/applications/ssad/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/home/prabhsimran/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x1b2de18: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;127.0.1.1&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;prabhsimran-Inspiron-7520&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/home/prabhsimran/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;winservice&#x27;: &#x27;&#x27;, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;scheduler_groups&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/home/prabhsimran/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>image/png,image/*;q=0.8,*/*;q=0.5</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.5</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-caa2744b-10eb-465b-a1eb-808c197b082a; session_id_admin=127.0.0.1-c94c7c22-ebde-4e04-acfe-b4aa464af4ef; session_id_uipart=127.0.0.1-f42be818-e2f8-4024-8fed-d86d80eacb8b; session_id_ssad=127.0.0.1-7830f68a-4544-4df4-b73b-e7749e80dcf1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_referer</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/UIpart/default/hotel_confirm/246309/2013-12-12/2013-12-17/2/200191444</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>::1</div></td></tr><tr><td><div>127.0.1.1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>prabhsimran-Inspiron-7520</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/UIpart/default/hotel_confirm/246309/2013-12-12/2013-12-17/2/img/img-4.png</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>51253</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/UIpart/default/hotel_confirm/246309/2013-12-12/2013-12-17/2/img/img-4.png</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>prabhsimran-Inspiron-7520</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>/home/prabhsimran/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.7.4-stable+timestamp.2013.10.14.15.16.29</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x7ff10a1e11e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x1a7ce20&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x7ff0d047add0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x7ff10a1e11e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x1a7ce20&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x7ff0d047add0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>/home/prabhsimran/web2py/applications/UIpart/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>hotel_confirm</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/home/prabhsimran/web2py/applications/welcome/&#x27;, &#x27;/home/prabhsimran/web2py/applications/admin/&#x27;, &#x27;/home/prabhsimran/web2py/applications/UIpart/&#x27;, &#x27;/home/prabhsimran/web2py/applications/ssad/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/home/prabhsimran/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x1b2de18: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;127.0.1.1&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;prabhsimran-Inspiron-7520&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/home/prabhsimran/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;winservice&#x27;: &#x27;&#x27;, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;scheduler_groups&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/home/prabhsimran/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>::1</div></td></tr><tr><td><div>127.0.1.1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>prabhsimran-Inspiron-7520</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.7.4-stable+timestamp.2013.10.14.15.16.29</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2013, 12, 2, 4, 10, 16, 769464)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div>246309/2013-12-12/2013-12-17/2/img/img-4.png</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/UIpart/default/hotel_confirm/246309/2013-12-12/2013-12-17/2/img/img-4.png</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2013, 12, 1, 22, 40, 16, 769491)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uuid</td><td style="vertical-align:top;">:</td><td><div>UIpart/127.0.0.1.2013-12-02.04-10-16.f910649b-a96f-4f9e-b3f2-dc503a958208</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x7ff0e06e7450&gt;</div></td></tr></table></div>'
+tRp58
+sS'frames'
+p59
+(lp60
+(dp61
+S'file'
+p62
+S'/home/prabhsimran/web2py/gluon/restricted.py'
+p63
+sS'dump'
+p64
+(dp65
+S'environment'
+p66
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, 'CAT': <class 'gluon.html.CAT'>, 'CENTER': <class 'gluon.html.CENTER'>, ...}"
+p67
+sS'ccode'
+p68
+S'<code object <module> at 0x7ff0dc52ebb0, file "/...UIpart/views/default/hotel_confirm.html", line 1>'
+p69
+ssS'lnum'
+p70
+I217
+sS'lines'
+p71
+(dp72
+I212
+S'    try:'
+p73
+sI213
+S'        if isinstance(code, types.CodeType):'
+p74
+sI214
+S'            ccode = code'
+p75
+sI215
+S'        else:'
+p76
+sI216
+S'            ccode = compile2(code, layer)'
+p77
+sI217
+S'        exec ccode in environment'
+p78
+sI218
+S'    except HTTP:'
+p79
+sI219
+S'        raise'
+p80
+sI220
+S'    except RestrictedError:'
+p81
+sI221
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p82
+ssS'call'
+p83
+S'(code=\'response.write(\\\'<!DOCTYPE html>\\\\n<html lang="en"...(\\\'"></script>\\\\n</body>\\\\n</html>\\\\n\\\', escape=False)\', environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, \'CAT\': <class \'gluon.html.CAT\'>, \'CENTER\': <class \'gluon.html.CENTER\'>, ...}, layer=\'/home/prabhsimran/web2py/applications/UIpart/views/default/hotel_confirm.html\')'
+p84
+sS'func'
+p85
+S'restricted'
+p86
+sa(dp87
+g62
+S'/home/prabhsimran/web2py/applications/UIpart/views/default/hotel_confirm.html'
+p88
+sg64
+(dp89
+sg70
+I139
+sg71
+(dp90
+I130
+S"response.write(', ', escape=False)"
+p91
+sI131
+S"response.write(hotel['hotelCity'])"
+p92
+sI132
+S"response.write('<br/>\\n<b>Check-in : </b>', escape=False)"
+p93
+sI133
+S'response.write(request.args(1))'
+p94
+sI134
+S"response.write('<br/>\\n<b>Check-out : </b>', escape=False)"
+p95
+sI135
+S'response.write(request.args(2))'
+p96
+sI136
+S"response.write('<br/>\\n<b>Rooms : </b>', escape=False)"
+p97
+sI137
+S'response.write(request.args(3))'
+p98
+sI138
+S"response.write('<br/>\\n<b>Room type description : </b>', escape=False)"
+p99
+sI139
+S"response.write(fin['roomTypeDescription'])"
+p100
+sI140
+S'response.write(\'<br/><br/>\\n<a href="\', escape=False)'
+p101
+sI141
+S"response.write(URL(r=request,f='booking_done',args=(request.args(0),request.args(1),request.args(2),request.args(3),request.args(4))))"
+p102
+sI142
+S'response.write(\'"><button type="btn btn-primary">Book</button></a>\\n\\n\', escape=False)'
+p103
+sI143
+S'response.write(\'\\n<div class="container">\\n    <div class="row">\\n      <div class="span12">        \\n        <ul class="thumbnails">\\n          <li class="span4">\\n            <div class="thumbnail">\\n              <div class="caption">\\n              \\t<img src="img/img-1.png" alt="">\\n                <h5>Most</h5>\\n                <h3>popular</h3>\\n              </div>  \\n              <div class="thumbnail-pad">\\n                  <p>Praesent vestibulum molestie lacus. Aenean noy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. </p>\\n                  <a href="#" class="btn btn_">more info</a>\\n              </div>\\n            </div>\\n          </li>\\n          <li class="span4">\\n            <div class="thumbnail">\\n              <div class="caption">\\n              \\t<img src="img/img-2.png" alt="">\\n                <h5>Beauty</h5>\\n                <h3>Gifts</h3>\\n              </div>  \\n              <div class="thumbnail-pad">\\n                  <p>Praesent vestibulum molestie lacus. Aenean my hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. </p>\\n                  <a href="#" class="btn btn_">more info</a>\\n              </div>\\n            </div>\\n          </li>\\n          <li class="span4">\\n            <div class="thumbnail">\\n              <div class="caption">\\n              \\t<img src="img/img-4.png" alt="">\\n                <h5>Award-Winning</h5>\\n                <h3>Fragrances</h3>\\n              </div>\\n              <div class="thumbnail-pad">  \\n                  <p>Nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis.</p>\\n                  <a href="#" class="btn btn_">more info</a>\\n              </div>\\n            </div>\\n          </li>\\n        </ul>\\n      </div>\\n    </div>\\n</div>\\n  </section>\\n<footer>\\n   <div class="container">\\n    <div class="row">\\n      <div class="span4 float2">\\n        <form id="newsletter" method="post" >\\n            <label>Newsletter</label>\\n            <div class="clearfix">\\n                <input type="text" onFocus="if(this.value ==\\\'Enter e-mail here\\\' ) this.value=\\\'\\\'" onBlur="if(this.value==\\\'\\\') this.value=\\\'Enter e-mail here\\\'" value="Enter e-mail here" >\\n                <a href="#" onClick="document.getElementById(\\\'newsletter\\\').submit()" class="btn btn_">subscribe</a>\\n            </div>\\n        </form>\\n    </div>\\n    <div class="span8 float">\\n      \\t<ul class="footer-menu">\\n            \', escape=False)'
+p104
+sI144
+S'if session.var==4:'
+p105
+sI145
+S'    response.write(\'\\n            <li><a href="\', escape=False)'
+p106
+sI146
+S"    response.write(URL('index'))"
+p107
+sI147
+S'    response.write(\'" >Flights</a>|</li>\\n            <li><a href="\', escape=False)'
+p108
+sI148
+S"    response.write(URL('railway'))"
+p109
+sI149
+S'    response.write(\'">Trains</a>|</li>\\n            <li><a href="\', escape=False)'
+p110
+ssg83
+S'()'
+p111
+sg85
+S'<module>'
+p112
+sasS'pyver'
+p113
+S'Python 2.7.4: /usr/bin/python (prefix: /usr)'
+p114
+sS'session'
+p115
+g57
+(S's\x9d\x0c\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">auth</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">expiration</td><td style="vertical-align:top;">:</td><td><div>3600</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">hmac_key</td><td style="vertical-align:top;">:</td><td><div>49463595-5ca7-4597-b049-aee074bdf586</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_visit</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2013, 12, 2, 4, 4, 50, 565764)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">City</td><td style="vertical-align:top;">:</td><td><div>Chandigarh</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">Country</td><td style="vertical-align:top;">:</td><td><div>India</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">Member_Type</td><td style="vertical-align:top;">:</td><td><div>user</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">Phone</td><td style="vertical-align:top;">:</td><td><div>1232345435L</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">Username</td><td style="vertical-align:top;">:</td><td><div>Prab</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">email</td><td style="vertical-align:top;">:</td><td><div>prab@gmail.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">first_name</td><td style="vertical-align:top;">:</td><td><div>Prabh</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">id</td><td style="vertical-align:top;">:</td><td><div>12L</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_name</td><td style="vertical-align:top;">:</td><td><div>Baweja</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_id</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">reset_password_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user_groups</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">date</td><td style="vertical-align:top;">:</td><td><div>2013-12-18</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_orderby</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_query</td><td style="vertical-align:top;">:</td><td><div>db.rail.id&gt;0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">var</td><td style="vertical-align:top;">:</td><td><div>4</div></td></tr></table></div>'
+tRp116
+sS'etype'
+p117
+S"<type 'exceptions.TypeError'>"
+p118
+sS'date'
+p119
+S'Mon Dec  2 04:10:19 2013'
+p120
+sS'response'
+p121
+g57
+(S'sk5\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x7ff0d419ddc0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_uipart</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-f42be818-e2f8-4024-8fed-d86d80eacb8b<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>/UIpart/static/js/jquery.js</div></td></tr><tr><td><div>/UIpart/static/css/calendar.css</div></td></tr><tr><td><div>/UIpart/static/js/calendar.js</div></td></tr><tr><td><div>/UIpart/static/js/web2py.js</div></td></tr><tr><td><div>/UIpart/static/css_template/css/bootstrap.css</div></td></tr><tr><td><div>/UIpart/static/css_template/css/responsive.css</div></td></tr><tr><td><div>/UIpart/static/css_template/css/camera.css</div></td></tr><tr><td><div>/UIpart/static/css_template/css/style.css</div></td></tr><tr><td><div>/UIpart/static/css_template/js/jquery.js</div></td></tr><tr><td><div>/UIpart/static/css_template/js/jquery.easing.1.3.js</div></td></tr><tr><td><div>/UIpart/static/css_template/js/camera.js</div></td></tr><tr><td><div>/UIpart/static/css_template/js/jquery.ui.totop.js</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">google_analytics_id</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">logo</td><td style="vertical-align:top;">:</td><td><div><a class="brand" data-w2p_disable_with="default" href="http://www.web2py.com/"><b>web<span>2</span>py</b>&trade;&nbsp;</a></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div><table><tr><td><div>Home</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/UIpart/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div><span class="highlighted">web2py</span></div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>My Sites</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/site</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>This App</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/design/UIpart</div></td></tr><tr><td><div>[(&lt;lazyT &#x27;Controller&#x27;&gt;, False, &#x27;/admin/default/edit/UIpart/controllers/default.py&#x27;), (&lt;lazyT &#x27;View&#x27;&gt;, False, &#x27;/admin/default/edit/UIpart/views/default/hotel_confirm.html&#x27;), (&lt;lazyT &#x27;Layout&#x27;&gt;, False, &#x27;/admin/default/edit/UIpart/views/layout.html&#x27;), (&lt;lazyT &#x27;Stylesheet&#x27;&gt;, False, &#x27;/admin/default/edit/UIpart/static/css/web2py.css&#x27;), (&lt;lazyT &#x27;DB Model&#x27;&gt;, False, &#x27;/admin/default/edit/UIpart/models/db.py&#x27;), (&lt;lazyT &#x27;Menu Model&#x27;&gt;, False, &#x27;/admin/default/edit/UIpart/models/menu.py&#x27;), (&lt;lazyT &#x27;Database&#x27;&gt;, False, &#x27;/UIpart/appadmin/index&#x27;), (&lt;lazyT &#x27;Errors&#x27;&gt;, False, &#x27;/admin/default/errors/UIpart&#x27;), (&lt;lazyT &#x27;About&#x27;&gt;, False, &#x27;/admin/default/about/UIpart&#x27;)]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>web2py.com</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com</div></td></tr><tr><td><div>[(&lt;lazyT &#x27;Download&#x27;&gt;, False, &#x27;http://www.web2py.com/examples/default/download&#x27;), (&lt;lazyT &#x27;Support&#x27;&gt;, False, &#x27;http://www.web2py.com/examples/default/support&#x27;), (&lt;lazyT &#x27;Demo&#x27;&gt;, False, &#x27;http://web2py.com/demo_admin&#x27;), (&lt;lazyT &#x27;Quick Examples&#x27;&gt;, False, &#x27;http://web2py.com/examples/default/examples&#x27;), (&lt;lazyT &#x27;FAQ&#x27;&gt;, False, &#x27;http://web2py.com/AlterEgo&#x27;), (&lt;lazyT &#x27;Videos&#x27;&gt;, False, &#x27;http://www.web2py.com/examples/default/videos/&#x27;), (&lt;lazyT &#x27;Free Applications&#x27;&gt;, False, &#x27;http://web2py.com/appliances&#x27;), (&lt;lazyT &#x27;Plugins&#x27;&gt;, False, &#x27;http://web2py.com/plugins&#x27;), (&lt;lazyT &#x27;Layouts&#x27;&gt;, False, &#x27;http://web2py.com/layouts&#x27;), (&lt;lazyT &#x27;Recipes&#x27;&gt;, False, &#x27;http://web2pyslices.com/&#x27;), (&lt;lazyT &#x27;Semantic&#x27;&gt;, False, &#x27;http://web2py.com/semantic&#x27;)]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Documentation</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book</div></td></tr><tr><td><div>[(&lt;lazyT &#x27;Preface&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/00&#x27;), (&lt;lazyT &#x27;Introduction&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/01&#x27;), (&lt;lazyT &#x27;Python&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/02&#x27;), (&lt;lazyT &#x27;Overview&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/03&#x27;), (&lt;lazyT &#x27;The Core&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/04&#x27;), (&lt;lazyT &#x27;The Views&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/05&#x27;), (&lt;lazyT &#x27;Database&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/06&#x27;), (&lt;lazyT &#x27;Forms and Validators&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/07&#x27;), (&lt;lazyT &#x27;Email and SMS&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/08&#x27;), (&lt;lazyT &#x27;Access Control&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/09&#x27;), (&lt;lazyT &#x27;Services&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/10&#x27;), (&lt;lazyT &#x27;Ajax Recipes&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/11&#x27;), (&lt;lazyT &#x27;Components and Plugins&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/12&#x27;), (&lt;lazyT &#x27;Deployment Recipes&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/13&#x27;), (&lt;lazyT &#x27;Other Recipes&#x27;&gt;, False, &#x27;http://www.web2py.com/book/default/chapter/14&#x27;), (&lt;lazyT &#x27;Buy this book&#x27;&gt;, False, &#x27;http://stores.lulu.com/web2py&#x27;)]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Community</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>None</div></td></tr><tr><td><div>[(&lt;lazyT &#x27;Groups&#x27;&gt;, False, &#x27;http://www.web2py.com/examples/default/usergroups&#x27;), (&lt;lazyT &#x27;Twitter&#x27;&gt;, False, &#x27;http://twitter.com/web2py&#x27;), (&lt;lazyT &#x27;Live Chat&#x27;&gt;, False, &#x27;http://webchat.freenode.net/?channels=web2py&#x27;)]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>None</div></td></tr><tr><td><div>[(&#x27;plugin_wiki&#x27;, False, &#x27;http://web2py.com/examples/default/download&#x27;), (&lt;lazyT &#x27;Other Plugins&#x27;&gt;, False, &#x27;http://web2py.com/plugins&#x27;), (&lt;lazyT &#x27;Layout Plugins&#x27;&gt;, False, &#x27;http://web2py.com/layouts&#x27;)]</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">author</td><td style="vertical-align:top;">:</td><td><div>Your Name &lt;you@example.com&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">description</td><td style="vertical-align:top;">:</td><td><div>a cool new app</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generator</td><td style="vertical-align:top;">:</td><td><div>Web2py Web Framework</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">keywords</td><td style="vertical-align:top;">:</td><td><div>web2py, python, framework</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/hotel_confirm/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_key</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_uipart</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;/home/prabhsimran/web2py/applications/UIpart/sessions/127.0.0.1-f42be818-e2f8-4024-8fed-d86d80eacb8b&#x27;, mode &#x27;rb+&#x27; at 0x7ff0d83b99c0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>/home/prabhsimran/web2py/applications/UIpart/sessions/127.0.0.1-f42be818-e2f8-4024-8fed-d86d80eacb8b</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>fa769fd7993c5d928f1a6dcd53e9fe06</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-f42be818-e2f8-4024-8fed-d86d80eacb8b</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_uipart</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>UIpart</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">subtitle</td><td style="vertical-align:top;">:</td><td><div>customize me!</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">title</td><td style="vertical-align:top;">:</td><td><div>Uipart</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>default/hotel_confirm.html</div></td></tr></table></div>'
+tRp122
+sS'locals'
+p123
+(dp124
+S'Service'
+p125
+S"<class 'gluon.tools.Service'>"
+p126
+sS'OBJECT'
+p127
+S"<class 'gluon.html.OBJECT'>"
+p128
+sS'SQLDB'
+p129
+S"<class 'gluon.dal.DAL'>"
+p130
+sg115
+S"<Storage {'last_query': 'db.rail.id>0', '_formke...34539', '6f5ae541-ef60-4fc1-8d4d-0188560e7bb8']}>"
+p131
+sS'LINK'
+p132
+S"<class 'gluon.html.LINK'>"
+p133
+sS'BR'
+p134
+S"<class 'gluon.html.BR'>"
+p135
+sS'local_import'
+p136
+S'<function <lambda>>'
+p137
+sS'OPTGROUP'
+p138
+S"<class 'gluon.html.OPTGROUP'>"
+p139
+sS'__package__'
+p140
+S'None'
+p141
+sS'PRE'
+p142
+S"<class 'gluon.html.PRE'>"
+p143
+sS'IS_INT_IN_RANGE'
+p144
+S"<class 'gluon.validators.IS_INT_IN_RANGE'>"
+p145
+sS'IS_LOWER'
+p146
+S"<class 'gluon.validators.IS_LOWER'>"
+p147
+sS'IS_STRONG'
+p148
+S"<class 'gluon.validators.IS_STRONG'>"
+p149
+sS'cache'
+p150
+S'<gluon.cache.Cache object>'
+p151
+sS'IS_IN_DB'
+p152
+S"<class 'gluon.validators.IS_IN_DB'>"
+p153
+sS'TAG'
+p154
+S'<gluon.html.__TAG__ object>'
+p155
+sS'SQLField'
+p156
+S"<class 'gluon.dal.Field'>"
+p157
+sS'mail'
+p158
+S'<gluon.tools.Mail object>'
+p159
+sS'fin'
+p160
+S'[]'
+p161
+sS'BODY'
+p162
+S"<class 'gluon.html.BODY'>"
+p163
+sS'IS_DATE_IN_RANGE'
+p164
+S"<class 'gluon.validators.IS_DATE_IN_RANGE'>"
+p165
+sS'IFRAME'
+p166
+S"<class 'gluon.html.IFRAME'>"
+p167
+sS'URL'
+p168
+S'<function URL>'
+p169
+sS'__file__'
+p170
+S"'/home/prabhsimran/web2py/applications/UIpart/views/default/hotel_confirm.html'"
+p171
+sS'db'
+p172
+S'<DAL uri="sqlite://storage.sqlite">'
+p173
+sS'auth'
+p174
+S'<gluon.tools.Auth object>'
+p175
+sS'P'
+S"<class 'gluon.html.P'>"
+p176
+sS'TFOOT'
+p177
+S"<class 'gluon.html.TFOOT'>"
+p178
+sS'XHTML'
+p179
+S"<class 'gluon.html.XHTML'>"
+p180
+sS'ON'
+p181
+S'True'
+p182
+sS'OL'
+p183
+S"<class 'gluon.html.OL'>"
+p184
+sS'TEXTAREA'
+p185
+S"<class 'gluon.html.TEXTAREA'>"
+p186
+sS'MENU'
+p187
+S"<class 'gluon.html.MENU'>"
+p188
+sS'IS_IMAGE'
+p189
+S"<class 'gluon.validators.IS_IMAGE'>"
+p190
+sS'EM'
+p191
+S"<class 'gluon.html.EM'>"
+p192
+sS'CODE'
+p193
+S"<class 'gluon.html.CODE'>"
+p194
+sS'HTTP'
+p195
+S"<class 'gluon.http.HTTP'>"
+p196
+sS'HR'
+p197
+S"<class 'gluon.html.HR'>"
+p198
+sS'IS_DATETIME'
+p199
+S"<class 'gluon.validators.IS_DATETIME'>"
+p200
+sS'STYLE'
+p201
+S"<class 'gluon.html.STYLE'>"
+p202
+sS'LABEL'
+p203
+S"<class 'gluon.html.LABEL'>"
+p204
+sS'CLEANUP'
+p205
+S"<class 'gluon.validators.CLEANUP'>"
+p206
+sS'plugins'
+p207
+S'<gluon.tools.PluginManager object>'
+p208
+sS'SELECT'
+p209
+S"<class 'gluon.html.SELECT'>"
+p210
+sS'use_janrain'
+p211
+S'<function use_janrain>'
+p212
+sS'CENTER'
+p213
+S"<class 'gluon.html.CENTER'>"
+p214
+sS'prettydate'
+p215
+S'<function prettydate>'
+p216
+sS'Crud'
+p217
+S"<class 'gluon.tools.Crud'>"
+p218
+sS'Auth'
+p219
+S"<class 'gluon.tools.Auth'>"
+p220
+sS'DEVELOPMENT_MENU'
+p221
+g182
+sS'__builtins__'
+p222
+S"{'ArithmeticError': <type 'exceptions.ArithmeticError'>, 'AssertionError': <type 'exceptions.AssertionError'>, 'AttributeError': <type 'exceptions.AttributeError'>, 'BaseException': <type 'exceptions.BaseException'>, 'BufferError': <type 'exceptions.BufferError'>, 'BytesWarning': <type 'exceptions.BytesWarning'>, 'DeprecationWarning': <type 'exceptions.DeprecationWarning'>, 'EOFError': <type 'exceptions.EOFError'>, 'Ellipsis': Ellipsis, 'EnvironmentError': <type 'exceptions.EnvironmentError'>, ...}"
+p223
+sS'HTML'
+p224
+S"<class 'gluon.html.HTML'>"
+p225
+sS'SQLFORM'
+p226
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p227
+sS'LOAD'
+p228
+S'<function LOAD>'
+p229
+sS'redirect'
+p230
+S'<function redirect>'
+p231
+sS'FIELDSET'
+p232
+S"<class 'gluon.html.FIELDSET'>"
+p233
+sS'IS_EQUAL_TO'
+p234
+S"<class 'gluon.validators.IS_EQUAL_TO'>"
+p235
+sS'embed64'
+p236
+S'<function embed64>'
+p237
+sS'IS_LIST_OF'
+p238
+S"<class 'gluon.validators.IS_LIST_OF'>"
+p239
+sS'INPUT'
+p240
+S"<class 'gluon.html.INPUT'>"
+p241
+sS'EMBED'
+p242
+S"<class 'gluon.html.EMBED'>"
+p243
+sS'_'
+S'<function _>'
+p244
+sS'H2'
+p245
+S"<class 'gluon.html.H2'>"
+p246
+sS'H3'
+p247
+S"<class 'gluon.html.H3'>"
+p248
+sS'BUTTON'
+p249
+S"<class 'gluon.html.BUTTON'>"
+p250
+sS'H1'
+p251
+S"<class 'gluon.html.H1'>"
+p252
+sS'H6'
+p253
+S"<class 'gluon.html.H6'>"
+p254
+sS'H4'
+p255
+S"<class 'gluon.html.H4'>"
+p256
+sS'H5'
+p257
+S"<class 'gluon.html.H5'>"
+p258
+sS'UL'
+p259
+S"<class 'gluon.html.UL'>"
+p260
+sS'IS_UPPER'
+p261
+S"<class 'gluon.validators.IS_UPPER'>"
+p262
+sS'xmlescape'
+p263
+S'<function xmlescape>'
+p264
+sS'IS_TIME'
+p265
+S"<class 'gluon.validators.IS_TIME'>"
+p266
+sS'OPTION'
+p267
+S"<class 'gluon.html.OPTION'>"
+p268
+sS'TITLE'
+p269
+S"<class 'gluon.html.TITLE'>"
+p270
+sS'CRYPT'
+p271
+S"<class 'gluon.validators.CRYPT'>"
+p272
+sS'IS_EMPTY_OR'
+p273
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p274
+sS'MARKMIN'
+p275
+S"<class 'gluon.html.MARKMIN'>"
+p276
+sS'__name__'
+p277
+S"'__restricted__'"
+p278
+sS'STRONG'
+p279
+S"<class 'gluon.html.STRONG'>"
+p280
+sS'COL'
+p281
+S"<class 'gluon.html.COL'>"
+p282
+sS'service'
+p283
+S'<gluon.tools.Service object>'
+p284
+sS'SCRIPT'
+p285
+S"<class 'gluon.html.SCRIPT'>"
+p286
+sS'TABLE'
+p287
+S"<class 'gluon.html.TABLE'>"
+p288
+sS'IS_IPV4'
+p289
+S"<class 'gluon.validators.IS_IPV4'>"
+p290
+sS'IS_LENGTH'
+p291
+S"<class 'gluon.validators.IS_LENGTH'>"
+p292
+sS'IS_IPV6'
+p293
+S"<class 'gluon.validators.IS_IPV6'>"
+p294
+sS'XML'
+p295
+S"<class 'gluon.html.XML'>"
+p296
+sS'B'
+S"<class 'gluon.html.B'>"
+p297
+sS'IMG'
+p298
+S"<class 'gluon.html.IMG'>"
+p299
+sS'SQLTABLE'
+p300
+S"<class 'gluon.sqlhtml.SQLTABLE'>"
+p301
+sS'IS_MATCH'
+p302
+S"<class 'gluon.validators.IS_MATCH'>"
+p303
+sS'hotel'
+p304
+S"{u'@size': u'2', u'HotelRoomResponse': [{u'BedTypes': {u'@size': u'2', u'BedType': [{u'@id': u'15', u'description': u'One Queen Bed'}, {u'@id': u'23', u'description': u'Two Queen Beds'}]}, u'CancelPolicyInfoList': {u'CancelPolicyInfo': [{u'cancelTime': u'23:59:00', u'currencyCode': u'INR', u'nightCount': 1, u'startWindowHours': 0, u'timeZoneDescription': u'(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi', u'versionId': 207574268}, {u'cancelTime': u'23:59:00', u'currencyCode': u'INR', u'nightCount': 0, u'startWindowHours': 24, u'timeZoneDescription': u'(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi', u'versionId': 208800048}]}, u'RateInfo': {u'@priceBreakdown': u'true', u'@promo': u'true', u'@rateChange': u'false', u'ChargeableRateInfo': {u'@averageBaseRate': u'5000.06', u'@averageRate': u'4500.05', u'@commissionableUsdTotal': u'720.06', u'@currencyCode': u'INR', u'@maxNightlyRate': u'4500.05', u'@nightlyRateTotal': u'45000.5', u'@surchargeTotal': u'9639.1', u'@total': u'54639.6', u'NightlyRatesPerRoom': {u'@size': u'5', u'NightlyRate': [...]}, u'Surcharges': {u'@size': u'1', u'Surcharge': {...}}}}, u'RoomImages': {u'@size': u'1', u'RoomImage': {u'url': u'http://media.expedia.com/hotels/1000000/530000/526400/526354/526354_42_s.jpg'}}, u'ValueAdds': {u'@size': u'1', u'ValueAdd': {u'@id': u'16777216', u'description': u'Breakfast Buffet'}}, u'cancellationPolicy': u'We understand that sometimes your travel plans...akes no refunds for no shows or early checkouts.', u'currentAllotment': 4, u'deepLink': u'https://travel.ian.com/templates/55505/hotels/...amp;rateKey=6737d36c-1ec0-486d-b907-60764818643c', u'depositRequired': True, u'guaranteeRequired': False, ...}, {u'BedTypes': {u'@size': u'2', u'BedType': [{u'@id': u'15', u'description': u'One Queen Bed'}, {u'@id': u'25', u'description': u'Two Twin Beds'}]}, u'CancelPolicyInfoList': {u'CancelPolicyInfo': [{u'cancelTime': u'23:59:00', u'currencyCode': u'INR', u'nightCount': 1, u'startWindowHours': 0, u'timeZoneDescription': u'(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi', u'versionId': 207574268}, {u'cancelTime': u'23:59:00', u'currencyCode': u'INR', u'nightCount': 0, u'startWindowHours': 24, u'timeZoneDescription': u'(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi', u'versionId': 208800048}]}, u'RateInfo': {u'@priceBreakdown': u'true', u'@promo': u'true', u'@rateChange': u'false', u'ChargeableRateInfo': {u'@averageBaseRate': u'6000.08', u'@averageRate': u'5400.07', u'@commissionableUsdTotal': u'864.08', u'@currencyCode': u'INR', u'@maxNightlyRate': u'5400.07', u'@nightlyRateTotal': u'54000.7', u'@surchargeTotal': u'11566.9', u'@total': u'65567.6', u'NightlyRatesPerRoom': {u'@size': u'5', u'NightlyRate': [...]}, u'Surcharges': {u'@size': u'1', u'Surcharge': {...}}}}, u'RoomImages': {u'@size': u'1', u'RoomImage': {u'url': u'http://media.expedia.com/hotels/1000000/530000/526400/526354/526354_40_s.jpg'}}, u'ValueAdds': {u'@size': u'1', u'ValueAdd': {u'@id': u'16777216', u'description': u'Breakfast Buffet'}}, u'cancellationPolicy': u'We understand that sometimes your travel plans...akes no refunds for no shows or early checkouts.', u'currentAllotment': 2, u'deepLink': u'https://travel.ian.com/templates/55505/hotels/...amp;rateKey=245b0f03-d0f7-4714-ab2a-4384b1f949f0', u'depositRequired': True, u'guaranteeRequired': False, ...}], u'arrivalDate': u'12/12/2013', u'checkInInstructions': u'<p><b>Know Before You Go</b> <br /><ul>  <li>T... minimize noise and disturbance. </p><p></p></p>', u'customerSessionId': u'0ABAAA75-5BF3-6914-2B02-51984F90674D', u'departureDate': u'12/17/2013', u'hotelAddress': u'Adjoining Meghdoot Gardens', u'hotelCity': u'Indore', u'hotelCountry': u'IN', u'hotelId': 246309, ...}"
+p305
+sS'IS_ALPHANUMERIC'
+p306
+S"<class 'gluon.validators.IS_ALPHANUMERIC'>"
+p307
+sS'SPAN'
+p308
+S"<class 'gluon.html.SPAN'>"
+p309
+sS'IS_JSON'
+p310
+S"<class 'gluon.validators.IS_JSON'>"
+p311
+sS'IS_IPADDRESS'
+p312
+S"<class 'gluon.validators.IS_IPADDRESS'>"
+p313
+sS'IS_SLUG'
+p314
+S"<class 'gluon.validators.IS_SLUG'>"
+p315
+sS'BEAUTIFY'
+p316
+S"<class 'gluon.html.BEAUTIFY'>"
+p317
+sS'META'
+p318
+S"<class 'gluon.html.META'>"
+p319
+sS'IS_DATE'
+p320
+S"<class 'gluon.validators.IS_DATE'>"
+p321
+sS'IS_EMAIL'
+p322
+S"<class 'gluon.validators.IS_EMAIL'>"
+p323
+sS'IS_NOT_EMPTY'
+p324
+S"<class 'gluon.validators.IS_NOT_EMPTY'>"
+p325
+sS'IS_FLOAT_IN_RANGE'
+p326
+S"<class 'gluon.validators.IS_FLOAT_IN_RANGE'>"
+p327
+sS'TBODY'
+p328
+S"<class 'gluon.html.TBODY'>"
+p329
+sS'CAT'
+p330
+S"<class 'gluon.html.CAT'>"
+p331
+sS'Field'
+p332
+S"<class 'gluon.dal.Field'>"
+p333
+sS'IS_LIST_OF_EMAILS'
+p334
+S"<class 'gluon.validators.IS_LIST_OF_EMAILS'>"
+p335
+sS'DIV'
+p336
+S"<class 'gluon.html.DIV'>"
+p337
+sS'LEGEND'
+p338
+S"<class 'gluon.html.LEGEND'>"
+p339
+sS'COLGROUP'
+p340
+S"<class 'gluon.html.COLGROUP'>"
+p341
+sS'DAL'
+p342
+S"<class 'gluon.dal.DAL'>"
+p343
+sS'TT'
+p344
+S"<class 'gluon.html.TT'>"
+p345
+sS'TR'
+p346
+S"<class 'gluon.html.TR'>"
+p347
+sS'LI'
+p348
+S"<class 'gluon.html.LI'>"
+p349
+sS'TH'
+p350
+S"<class 'gluon.html.TH'>"
+p351
+sS'TD'
+p352
+S"<class 'gluon.html.TD'>"
+p353
+sS'PluginManager'
+p354
+S"<class 'gluon.tools.PluginManager'>"
+p355
+sS'IS_URL'
+p356
+S"<class 'gluon.validators.IS_URL'>"
+p357
+sS'A'
+S"<class 'gluon.html.A'>"
+p358
+sS'HEAD'
+p359
+S"<class 'gluon.html.HEAD'>"
+p360
+sS'IS_DATETIME_IN_RANGE'
+p361
+S"<class 'gluon.validators.IS_DATETIME_IN_RANGE'>"
+p362
+sS'FORM'
+p363
+S"<class 'gluon.html.FORM'>"
+p364
+sS'I'
+S"<class 'gluon.html.I'>"
+p365
+sS'crud'
+p366
+S'<gluon.tools.Crud object>'
+p367
+sS'IS_NOT_IN_DB'
+p368
+S"<class 'gluon.validators.IS_NOT_IN_DB'>"
+p369
+sg121
+S"<Storage {'body': <cStringIO.StringO object at 0...d83a75f0>, 'view': 'default/hotel_confirm.html'}>"
+p370
+sS'THEAD'
+p371
+S"<class 'gluon.html.THEAD'>"
+p372
+sS'ANY_OF'
+p373
+S"<class 'gluon.validators.ANY_OF'>"
+p374
+sS'IS_NULL_OR'
+p375
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p376
+sg56
+S"<Storage {'_vars': None, 'function': 'hotel_conf...'/home/prabhsimran/web2py/applications/UIpart/'}>"
+p377
+sS'IS_EXPR'
+p378
+S"<class 'gluon.validators.IS_EXPR'>"
+p379
+sS'T'
+S'<gluon.languages.translator object>'
+p380
+sS'IS_IN_SET'
+p381
+S"<class 'gluon.validators.IS_IN_SET'>"
+p382
+sS'IS_UPLOAD_FILENAME'
+p383
+S"<class 'gluon.validators.IS_UPLOAD_FILENAME'>"
+p384
+sS'IS_DECIMAL_IN_RANGE'
+p385
+S"<class 'gluon.validators.IS_DECIMAL_IN_RANGE'>"
+p386
+sssS'traceback'
+p387
+S'Traceback (most recent call last):\n  File "/home/prabhsimran/web2py/gluon/restricted.py", line 217, in restricted\n    exec ccode in environment\n  File "/home/prabhsimran/web2py/applications/UIpart/views/default/hotel_confirm.html", line 139, in <module>\nTypeError: list indices must be integers, not str\n'
+p388
+s.

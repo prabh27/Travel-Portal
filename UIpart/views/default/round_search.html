@@ -1,0 +1,113 @@
+{{extend 'layout2.html'}}
+<head>
+<style>
+    #data_table thead th , #data_table tr td{
+        text-align:center;
+        padding:10px 10px;
+       
+        
+       
+    }
+    #data_table tr td{
+        background-color:#ffffff;
+          
+            
+           
+        
+        
+    }
+    
+    #data_table{
+        border-radius:8px 8px 8px 8px;
+        width:100%;
+                box-shadow: 1px 1px 5px #888888;border-radius:8px 8px 8px 8px;
+
+        
+    }
+    .bookbutton{
+        border-radius:0;
+        box-shadow: 1px 1px 5px #888888;
+        
+    }
+    
+    </style>
+</head>
+<body class="innerbody">
+<table id="data_table" cellspacing="10" cellpadding="10" class="" style="font-size:120%;background-color:#eeeeee;color:#000000;">
+    <caption><h3 style="background-color:lightgrey">{{=request.args(0)}} to {{=request.args(1)}}</h3></span></caption>
+<thead>
+<th>Select One</th>
+<th>Logo</th>
+<th>Airline/Train name/Bus name</th>
+<th>Departure Time</th>
+<th>Arrival time</th>
+<th>Seats Available</th>
+<th>Price</th>
+    </thead>
+    
+
+{{for i in range(len(lis)):}}
+	<tr class="">
+	<td><input type="radio" name="select1" id="select1" value="{{=lis[i]}}^{{=company[i]}}^{{=dtime[i]}}^{{=atime[i]}}^{{=seats[i]}}^{{=int(request.args(3))*(int)(price[i])}}^{{=new[i]}}" class="select1"></td>
+	<td><img src='{{=URL('download', args=logo[i])}}' width=50px height=50px></td>
+	<td>{{=company[i]}}<br/>{{=lis[i]}}</td>
+        <td>{{=dtime[i].strftime("%I:%M %p %a ")}}</td>
+	<td>{{=atime[i].strftime("%I:%M %p %a ")}}</td>
+	<td>{{=seats[i]}}</td>
+	<td>{{=int(request.args(3))*(int)(price[i])}}
+	</td>
+	<!--<td><a href="{{=URL(f='confirm',vars=dict(logo=logo[i],lis=lis[i],dtime=dtime[i],atime=atime[i],seats=request.args(3),price=int(request.args(3))*int(price[i]),send=new[i],src=request.args(0),dest=request.args(1),cl=request.args(4)))}}"><button type="button" class="btn btn-info">Book</button></a></td-->
+	</tr>
+	<tr><td colspan="7"><hr/>
+        </td>    </tr>
+   
+{{pass}}
+</table>
+<table id="data_table" cellspacing="10" cellpadding="10" class="" style="font-size:120%;background-color:#eeeeee;color:#000000;">
+    <caption><h3 style="background-color:lightgrey">{{=request.args(1)}} to {{=request.args(0)}}</h3></span></caption>
+<thead>
+<th>Select One</th>
+<th>Logo</th>
+<th>Airline/Train name/Bus name</th>
+<th>Departure Time</th>
+<th>Arrival time</th>
+<th>Seats Available</th>
+<th>Price</th>
+    </thead>
+    
+
+{{for i in range(len(lis1)):}}
+	<tr>
+	<td><input type="radio" name="select2" id="select2" value="{{=lis1[i]}}^{{=company1[i]}}^{{=dtime1[i]}}^{{=atime1[i]}}^{{=seats1[i]}}^{{=int(request.args(3))*int(price1[i])}}^{{=new1[i]}}" class="select2"></td>
+	<td><img src='{{=URL('download', args=logo1[i])}}' width=50px height=50px></td>
+	<td>{{=company1[i]}}<br/>{{=lis1[i]}}</td>
+        <td>{{=dtime1[i].strftime("%I:%M %p %a ")}}</td>
+	<td>{{=atime1[i].strftime("%I:%M %p %a ")}}</td>
+	<td>{{=seats1[i]}}</td>
+	<td>{{=int(request.args(3))*(int)(price1[i])}}</td>
+	<!--<td><a href="{{=URL(f='round_confirm',vars=dict(logo=logo[i],lis=lis[i],dtime=dtime[i],atime=atime[i],seats=request.args(3),price=int(request.args(3))*int(price[i]),send=new[i],src=request.args(0),dest=request.args(1),cl=request.args(4)))}}"><button type="button" class="btn btn-info">Book</button></a></td-->
+	</tr>
+	<tr><td colspan="7"><hr/>
+        </td>    </tr>
+   
+{{pass}}
+</table>
+<form action="{{=URL('round_confirm')}}" method="post">
+<input type="hidden" name="flight1" id="flight1" />
+<input type="hidden" name="flight2" id="flight2" />
+<input type="text" name="src" id="src" value="{{=request.args(0)}}"/> 
+<input type="text" name="dest" id="dest" value="{{=request.args(1)}}"/> 
+<input type="text" name="cl" id="cl" value="{{=request.args(4)}}"/> 
+<button class="btn btn-info" type="submit">Submit</button>
+</form>
+<script>
+$( ".select1" ).change(function() {
+	$a=$('input[name=select1]:radio:checked').val();
+	$('#flight1').val($a);
+	});
+$( ".select2" ).change(function() {
+	$a=$('input[name=select2]:radio:checked').val();
+	$('#flight2').val($a);
+	});
+</script>
+</body>

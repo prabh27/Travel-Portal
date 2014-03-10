@@ -1,0 +1,43 @@
+{{extend 'layout.html'}}
+<head>
+<style>
+    .PageForm tr td{
+        font-weight:bold;
+        font-size:16px;
+        
+        }
+        
+    </style>
+</head>
+<br>
+<br>
+<center><h3 style="margin:auto;color:#08686B"> Search for Trains</h3></center>
+          
+<div><center>{{=form.custom.begin}}
+    <table class="PageForm">
+    <tr>
+        <td><b>From</b></td> <td><b>To</b></td>
+        </tr>
+        <tr>
+            <td>{{=form.custom.widget.From}}</td><td>{{=form.custom.widget.To}}</td>
+        
+        </tr>
+        <tr>
+        <td>Date
+            </td>
+            
+            
+        </tr>
+        <tr>
+            <td>{{=form.custom.widget.d}}
+            </td>
+            <td>{{=form.custom.submit}}    </td>
+           
+            
+        </tr>
+    </table>
+    
+    
+    {{=form.custom.end}}
+    </center>
+</div>

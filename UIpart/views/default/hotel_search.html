@@ -1,0 +1,54 @@
+{{extend 'layout.html'}}
+<head>
+<style>
+    .PageForm tr td{
+        font-weight:bold;
+        font-size:16px;
+        
+        }
+        
+  
+        </style>
+</head>
+<br/>
+<center><h3 style="margin:auto;color:#08686B;"> Search for a Hotel </h3></center>
+<br/>
+
+<div><center>{{=form.custom.begin}}
+    <table class="PageForm">
+        <tr><td>Name of City</td>
+        
+        </tr>
+        <tr><td>{{=form.custom.widget.city}}</td>
+        
+        </tr>
+        
+    <tr>
+        <td>Arrival Date
+            </td>
+            <td>
+            Departure Date
+        </td>
+    </tr>
+    <tr>
+        <td>{{=form.custom.widget.arrivalDate}}
+            </td>
+            
+            <td>
+                {{=form.custom.widget.departDate}}
+        </td>
+    </tr>
+    <tr>
+        <td>Number of Rooms</td>
+    </tr>
+    <tr>
+        <td>{{=form.custom.widget.rooms}}</td>
+        <td> {{=form.custom.submit}} </td>
+    </tr>
+    </table>
+      
+    
+    {{=form.custom.end}}
+    </center>
+</div>
+<hr/>

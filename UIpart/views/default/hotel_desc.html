@@ -1,0 +1,90 @@
+{{extend 'layout2.html'}}
+<br/>
+
+<div style="margin:auto;width:60%;font-size:16px;">
+<!--
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+style="text-decoration:none;color:#000000;">
+Check-in Instructions
+</a>
+</h4>
+</div>
+<div id="collapseOne" class="panel-collapse collapse out">
+<div class="panel-body">
+<p id="print">{{=hotel['checkInInstructions']}}</p>
+</div>
+</div>
+</div>
+</div>-->
+<br/><br/>
+<br/>
+<p id="desc">{{=desc}}</p>
+{{count=0}}
+
+<h3>Choose a Hotel room type:</h3>
+{{for i in li:}}
+<b>{{=i['roomTypeDescription']}}</b><br/>
+<p>Maximum room occupancy : {{=i['rateOccupancyPerRoom']}}</p>
+
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+<div class="panel-heading">
+<p><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne{{=count}}"
+style="text-decoration:none;color:#000000;background-color:#f2f2f2;padding:2px 4px;">Cancellation Policy</a></p></div>
+<div id="collapseOne{{=count}}" class="panel-collapse collapse out">
+<div class="panel-body">
+<p id="print">{{=i['cancellationPolicy']}}</p>
+</div>
+</div>
+</div>
+</div>
+{{count+=1}}
+{{try:}}
+{{=i['promoDescription']}}
+{{except:}}
+{{pass}}
+<p>Nightly rate per room : {{=i['RateInfo']['ChargeableRateInfo']['@averageBaseRate']}}</p>
+<p>Total : {{=i['RateInfo']['ChargeableRateInfo']['@total']}}</p>
+{{try:}}
+<img src="{{=i['RoomImages']['RoomImage']['url']}}" alt="Room Image Not Available"><br/><br/>
+{{except:}}
+<img src="http://www.panhandletickets.com/images/not_available.jpg" style="width:200px;height:150px;margin:5px 5px 5px 0px;border:none;">
+{{pass}}
+<a href="{{=URL(r=request,f='hotel_confirm',args=(request.args(0),request.args(1),request.args(2),request.args(3),i['roomTypeCode']))}}"><button class="btn btn-info">Book</button></a><br/><br/>
+<hr/>
+{{pass}}
+</div>
+<!--
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+Check-in Instructions
+</a>
+</h4>
+</div>
+<div id="collapseFour" class="panel-collapse collapse in">
+<div class="panel-body">
+<p id="print">{{=hotel['checkInInstructions']}}</p>
+eleleskjasdaka
+</div>
+</div>
+</div>-->
+</div>
+
+<script>
+$a=$("#print").text();
+$("#print").html($a);
+$a=$("#desc").text();
+$("#desc").html($a);
+$a=$("#desc").text();
+$("#desc").html($a);
+$(".collapse").collapse();
+
+</script>
+

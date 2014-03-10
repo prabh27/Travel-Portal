@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Search Engine manual</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/idea.css" type="text/css" media="all">    
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+   <script src="js/highlight.js"></script>
+  <script src="js/html5.js"></script>
+  <script src="js/html-xml.js"></script>
+  <script src="js/css.js"></script>
+  <script src="js/javascript.js"></script>
+  
+  <script>
+    hljs.tabReplace = '    ';
+    hljs.initHighlightingOnLoad();
+  </script>
+
+  <!-- demo -->
+  <link rel="stylesheet" href="css/demo.css" type="text/css" media="all">
+  <!-- end demo -->  
+  
+  <!--[if lt IE 7]>
+  	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="screen">    
+  <![endif]-->
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">    
+  <![endif]-->
+</head>
+
+<body>
+	<div id="main">
+		<div class="inside">
+			<!-- header -->
+			<header id="header">
+				<div class="inside">
+					<h1>Search engine manual</h1>
+				</div>
+			</header>
+			<section id="content">
+				<article>		
+					<h2 class="pad">Demo</h2>
+					<p class="pad">Attention! Search feature will not work locally. It works only on a hosting-server with PHP enabled.</p>
+					<span class="word">Enter a word to search for:</span>
+					<form id="search" action="search.php" method="GET" accept-charset="utf-8">
+					   <input type="text" name="s" />
+					   <a onclick="document.getElementById('search').submit()">Search</a>
+					</form>			
+					<span class="example">For instance: lorem, ipsum, dolor</span>
+					<h2 class="pad">Description</h2>
+					<div class="inner">
+						<p><strong>Files needed to work with the form:</strong></p>
+						<div class="inner">
+							<ul>
+								<li><strong>jquery-1.7.1.min.js</strong> &ndash; jQuery library (the form will work with this version of library only);</li>
+								<li><strong>search.css</strong> &ndash; stylesheet file, which is being used for the search results pages stylization;</li>
+								<li><strong>search.php</strong> &ndash; page, where the search results will appear;</li>
+								<li><strong>search.js</strong> &ndash; script, which is responsible for the search results output in an iframe on the page <strong>search.php;</strong></li>
+								<li><strong>results.php</strong> &ndash; PHP script, which actually performs the search.</li>
+							</ul>
+						</div>
+						<p class="pad"><strong>To make the form work correctly, proper parameters should be set:</strong></p>
+						<div class="code"><pre><code>&lt;form id="search" action="search.php" method="GET" accept-charset="utf-8"&gt;
+   &lt;input type="text" name="s" /&gt;
+   &lt;a onclick="document.getElementById('search').submit()"&gt;Search&lt;/a&gt;
+&lt;/form&gt;</pre></code></div>
+						<p class="pad">In this form we should define such parameters as: <strong>action="search.php"</strong> and <strong>method="get"</strong>, also set parameter for an input: <strong>name="s"</strong>. If you want to change the name of the search form, which is <strong>id="search"</strong> by default, you should change it on the line 3 in the file <strong>search.js</strong> as well, you can find it in <strong>search</strong> folder.</p>						
+					</div>
+					<h2 class="pad">Settings</h2>
+					<div class="inner">
+						<p class="attention">Note, search form is enabled, configured and works by default. These steps are required if you are trying to use this search form in another project/template without working search form.</p>
+						<p class="pad">To make the form work correctly, please, perform the following steps:</p>
+						<ul class="">
+							<li>copy <strong>search</strong> folder to the root directory with your *.html files;</li>
+							<li>move file <strong>search.php</strong> from the <strong>search</strong> folder to the root directory (with *.html files);</li>
+							<li>edit your form, using the directions above;</li>
+							<li>copy partly header and footer with all the connected scripts in the section <strong>&lt;head&gt;&lt;/head&gt;</strong> to the page <strong>search.php</strong>, but necessarily add connection of the file <strong>search.js</strong>. For example:
+							<div class="code"><pre><code>&lt;link rel="stylesheet" href="css/reset.css" type="text/css" media="all"&gt;
+&lt;link rel="stylesheet" href="css/fonts.css" type="text/css" media="all"&gt;
+&lt;link rel="stylesheet" href="css/style.css" type="text/css" media="all"&gt;
+
+&lt;script src="js/jquery-1.7.1.min.js"&gt;&lt;/script&gt;
+&lt;script src="search/search.js"&gt;&lt;/script&gt;</pre></code></div></li>
+							<li>for the search results output add the following block to your content:
+								<div class="code"><pre><code>&lt;h3&gt;Search result:&lt;/h3&gt;
+&lt;div id="search-results"&gt;&lt;/div&gt;</pre></code></div>								
+							</li>
+							<li>change style of the search results, using <strong>search.css</strong>.</li>
+						</ul>			
+						<p class="pad">All the rest main styles of your template will be automatically pulled from the file <strong>style.css</strong> by the PHP script.</p>
+					</div>
+				</article> 
+			</section>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Documentation</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="all">
+  <script type="text/javascript" src="js/jquery-1.5.1.min.js" ></script>
+  <script type="text/javascript" src="js/jquery.prettyPhoto.js" ></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+			// prettyphoto init
+			jQuery("a[rel^='prettyPhoto']").prettyPhoto({
+				animationSpeed:'slow',
+				theme:'facebook',
+				slideshow:false,
+				autoplay_slideshow: false,
+				show_title: true,
+				overlay_gallery: false
+			});
+			
+	// hide #back-top first
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});	
+		});
+  </script>
+  <!--[if lt IE 7]>
+  	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="screen">
+    <script type="text/javascript" src="js/ie_png.js"></script>
+    <script type="text/javascript">
+        ie_png.fix('.png');
+    </script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+  <![endif]-->
+  </head>
+
+  <body>
+<div id="main">
+    <div id="back-top"> <a href="#header-row"> </a> </div>
+    <div class="inside"> 
+    <!-- header -->
+    <header id="header">
+        <div class="inside">
+        <h1>Bootstrap template manual</h1>
+      </div>
+      </header>
+    <section id="content">
+        <article>
+        <p>Thank you for purchasing a website template from our company. This manual will show you how to work with your template, how to edit it and make it a "live" website. </p>
+        <p>The template you ordered is a <strong>Bootstrap Template</strong>. It's an HTML template based on Bootstrap framework with JavaScript-based animation. So all pages content is made with HTML and dynamic animation is made with JavaScript. </p>
+      </article>
+        <article>
+        <h2>Table of Contents</h2>
+        <div class="inner">
+            <ol class="table_content">
+            <li><a href="#unzipping">Unzipping Template Package</a>
+              <li><a href="#general">General Information and Template Structure</a></li>
+            <li><a href="#static">Editing Bootstrap template</a>
+                <ul>
+                <li><a href="#edit-html">Editing HTML and CSS files</a></li>
+                <li><a href="#edit-psd">Editing PSD files</a></li>
+                <li><a href="#cufon">Custom Fonts</a></li>
+              </ul>
+              </li>
+            <li><a href="#tutorials">Customization Tutorials</a>
+                <ul>
+                <li><a href="#edit-text">How to edit text</a></li>
+                <li><a href="#edit-images">How to edit images</a></li>
+                <li><a href="#contact-form">How to activate contact form</a></li>
+              </ul>
+              </li>
+            <li><a href="#addons">TM add-ons</a>
+              <li><a href="#upload">Uploading template</a>
+              <li><a href="#conclusion">Conclusion</a></li>
+          </ol>
+          </div>
+      </article>
+        <article>
+        <h2 id="unzipping">Unzipping Template Package</h2>
+        <div class="inner">
+            <p>After unzipping the template package you will find 3 folders: &quot;<strong>documentation</strong>&quot;, &quot;<strong>screenshots</strong>&quot; and &quot;<strong>site</strong>&quot;. You can also see a zip archive called &quot;<strong>sources_############.zip</strong>&quot; that you need to unzip. </p>
+            <p>The sources package contains all source files for the template. The package is password protected and can be extracted only with <a href="http://templatemonster.com/help/unzipping-your-template.html" target="_blank">WinZip (Windows OS)</a> and <a href="http://templatemonster.com/help/how-unzip-template-mac.html" target="_blank">StuffitExpander (MAC OS)</a> software.</p>
+            <p>You can download both applications for free using the free trial options:</p>
+            <ul>
+            <li><a href="http://www.winzip.com/downauto.cgi?o=1&file=http://download.winzip.com/winzip160.exe&email=&er=&os=win" target="_blank">WinZip</a></li>
+            <li><a href="http://www.stuffit.com/mac-stuffit-download.html" target="_blank">StuffitExpander</a></li>
+          </ul>
+            <p class="notification-box">While unzipping "sources_############.zip" archive you will be prompted to enter a password, which you can find at your Product Download Page (open the link in the email you received from our company).</p>
+            <p>As soon as you are done with the unzipping the template you should have 4 folders in total: &quot;<strong>documentation</strong>&quot;, &quot;<strong>screenshots</strong>&quot;, &quot;<strong>site</strong>&quot; and &quot;<strong>sources</strong>&quot;.</p>
+          </div>
+        <h2 id="general">General Information and Template Structure</h2>
+        <div class="inner">
+            <h3 id="static-req">Software requirements</h3>
+            <p><strong>Adobe Dreamweaver</strong> (<a href="http://www.adobe.com/products/dreamweaver/" target="_blank">download free trial</a>). Used to edit the .HTML, .JS, .PHP and .CSS files.<br/>
+            <strong>Adobe Photoshop CS</strong> or later (<a href="http://www.adobe.com/products/photoshop.html" target="_blank">download free trial</a>). Used to edit .PSD files.</p>
+            <p>The following scheme displays the Bootsrap template files structure. </p>
+            <ul class="files-structure">
+            <li class="lev-1">"<strong>documentation</strong>" – contains documentation on template editing and installation.</li>
+            <li class="lev-1">"<strong>screenshots</strong>" – contains screenshots of the template.</li>
+            <li class="lev-1">"<strong>site</strong>" – contains the .html files of the template.</li>
+            <li class="lev-2">- "<strong>assets</strong>" – contains assets and bonus add-ons.</li>
+            <li class="lev-2">- "<strong>bat</strong>" – contains contact form processing .php script.</li>
+            <li class="lev-2">- "<strong>css</strong>" – contains all the .css files used in the design.</li>
+            <li class="lev-2">- "<strong>img</strong>" – contains all the images used in .html files.</li>
+            <li class="lev-2">- "<strong>js</strong>" – contains JavaScript libraries and jQuery plugins.</li>
+            <li class="lev-2">- "<strong>search</strong>" – contains .js, .php and .css file of the search engine.</li>
+            <li class="lev-1">"<strong>sources</strong>" – contains source files.</li>
+            <li class="lev-2">- "<strong>less</strong>" - contains .css LESS files used in the template.</li>
+            <li class="lev-2">- "<strong>psd</strong>" – contains Adobe Photoshop .psd files.</li>
+            <li class="lev-1 file">- "<strong>fonts_info.txt</strong>" – contains the list of fonts used in template.</li>
+            <li class="lev-1 file">- "<strong>info.txt</strong>" – contains the information about password protected "sources" folder.</li>
+          </ul>
+          </div>
+        <h2 id="static">Editing Bootstrap template</h2>
+        <div class="inner">
+            <p>Working with the  template you need to edit the <strong>.html</strong>, <strong>.css</strong>, <strong>.js</strong> and <strong>.psd</strong> files. </p>
+            <h3 id="edit-html">Editing HTML and CSS files</h3>
+            <p>All editable HTML files are located in "<strong>site</strong>" folder of the template package (index.html, index-1.html,index-2.html, etc.) Each index-#.html file represents a single template page. </p>
+            <p>To open .html file with Adobe Dreamweaver application, you should right mouse click on the file, and in the context menu select <strong>Open with -> Adobe Dreamweaver</strong>. When the file is opened you can start editing it.</p>
+            <p>Adobe Dreamweaver is a recommended application as it allows you to edit the HTML files content in visual mode. Open any .html file and click the <strong>Live Code </strong> button at the top of the screen to switch to visual mode. </p>
+            <div class="cols"> <a class="first" href="images/dreamweaver-code.jpg" rel="prettyPhoto"><img src="images/dreamweaver-code.jpg" width="460"></a> <a class="last" href="images/dreamweaver-design.jpg" rel="prettyPhoto"><img src="images/dreamweaver-design.jpg" width="460"></a> </div>
+            <p>Feel free to check the detailed text and video tutorials on <a href="http://www.templatemonster.com/help/general-tutorials/work-with-html/" target="_blank">how to edit HTML files with Adobe Dreamweaver</a>.</p>
+            <p>CSS files are used to change the template appearance like fonts (font-family, font-size, color etc), backgrounds, column width values etc. You can edit the css files with Adobe Dreamweaver application. Detailed tutorials on <a href="http://templatemonster.com/help/general-tutorials/work-with-css/" target="_blank">how to work with the CSS files</a> are available at our online help center. </p>
+            <h3 id="edit-psd">Editing PSD files</h3>
+            <p>PSD files are located in the &quot;<strong>sources/psd</strong>&quot; folder in your template package. PSD are the source files of the template design. They are divided into layers so any part of the template design can be changed. </p>
+            <p>During the customization process you can refer to the PSD files in order to change the images used in the content pages or in the design. </p>
+            <p align="center"><a class="last" href="images/photoshop-interface.jpg" rel="prettyPhoto"><img src="images/photoshop-interface.jpg" width="460"></a></p>
+            <p>You can learn more about working with photoshop by<a href="http://templatemonster.com/help/general-tutorials/work-with-photoshop/" target="_blank"> checking the detailed tutorials</a>.</p>
+            <h3 id="cufon">Custom Fonts</h3>
+            <p>Some templates may contain the non-default fonts used in the design. By default the internet browser can render only fonts that are installed to your operating system. In other words if your website design uses some custom fonts and these custom fonts are not installed on your website visitor's computer, custom fonts won't be displayed. Default fonts will be rendered instead. That's why web developers should look for some alternative solutions. In our Bootstrap templates custom fonts are embedded using <strong>Google Web Fonts</strong> technology. </p>
+            <h4>Google Web Fonts</h4>
+            <p>You can learn more on using Google Web Fonts by checking the tutorial on <a href="http://templatemonster.com/help/how-to-use-the-google-web-fonts-api.html">how to work with Google web Fonts</a>. </p>
+          </div>
+        <h2 id="tutorials">Customization Tutorials</h2>
+        <div class="inner">
+            <h3 id="edit-text">How to edit text</h3>
+            <p>Bootstrap templates are HTML based templates so all content is stored and could be accessed though the .html files.</p>
+            <ol>
+            <li>Open your template package and go to the site folder.</li>
+            <li>There open index.html  file with your HTML editor.</li>
+            <li>You can use the search tool <strong>CTRL+F </strong>to find any text you need.</li>
+            <li>Edit text in HTML editor. Save the file and open it with your Browser to see the changes.</li>
+          </ol>
+            <p>The other way is to use the browser developer tool to find the blocks you want to edit. You can learn more about the developer tools checking the tools description and tutorials.</p>
+            <p>Feel free to check the following <a href="http://www.templatemonster.com/help/developer-tools.html" target="_blank">Developer Tools</a> article.</p>
+            <p>You can also check the video tutorial on <a href="http://templatemonster.com/help/js-animated-how-to-edit-text.html">how to edit text in JS Animated templates</a></p>
+            <h3 id="edit-images">How to edit images</h3>
+            <p>Open the template folder, go to '<strong>site/images</strong>' directory. You can upload your images with the same name and extension to replace the default ones.</p>
+            <p>The other way is to upload custom images with your titles and extensions. Then you&rsquo;ll need to change the image file names in the html files.</p>
+            <ol>
+            <li>Open <strong>.html</strong> file from the &ldquo;<strong>site</strong>&rdquo; folder with your html editor.</li>
+            <li>Use search tool <strong>CTRL+F</strong> to find the images in the html file.</li>
+            <li>Replace the image title and extension.</li>
+          </ol>
+            <p>You can also check the video tutorial on <a href="http://templatemonster.com/help/js-animated-how-to-change-images.html">how to edit images</a>.</p>
+            <h3 id="contact-form">How to activate contact form</h3>
+            <ol>
+            <li>Open the template folder.</li>
+            <li>Go the <strong>site/js</strong> directory.</li>
+            <li>There open the '<strong>forms.js</strong>' file with your editor (Adobe Dreamweaver, Notepad etc).</li>
+            <li>Using the Find and Replace tool (CTRL+F) search for the <strong>ownerEmail</strong> or just scroll down to the very bottom of the page.</li>
+          </ol>
+            <p>You should see the following line:</p>
+            <p> <strong>ownerEmail:'#'</strong> </p>
+            <p>replace <strong>#</strong> symbol with your email address. That’s all, now the contact form should send the messages to your email account.</p>
+            <p></p>
+            <p>You can see the detailed tutorial on <a href="http://templatemonster.com/help/js-animated-how-to-activate-contact-form.html">how to activate contact form in your template</a>.</p>
+          </div>
+        <h2 id="addons">TM add-ons</h2>
+        <p>Bootstrap templates are provided with three free add-ons:</p>
+        <ol>
+            <li><strong>Contact Form</strong> - gives visitors the opportunity to send messages to the site-owner.</li>
+            <li><strong>Search Engine</strong> - performs search through content of .html files.</li>
+            <li><strong>Under Construction</strong> - is the page with countdown timer.</li>
+          </ol>
+        <p class="notification-box">Note, Contact Form and Search Engine add-ons are already implemented into your template and working by default. Feel free to check the detailed documentation for each add-on in case of additional configuration or in case you are going to implement them into another website/project/template.</p>
+        <ol>
+            <li><a href="addons\ContactForm\ContactFormManual.html" target="_blank">Contact Form</a></li>
+            <li><a href="addons\Search%20Engine\Search%20engine%20manual.html" target="_blank">Search Engine</a></li>
+            <li><a href="addons\Under%20Construction\Countdown%20script%20manual.html" target="_blank">Under Construction</a></li>
+          </ol>
+        <div class="inner"> </div>
+        <h2 id="upload">Uploading template</h2>
+        <div class="inner">
+            <p>In order to make your site "live", you need to upload all the content of "<strong>site</strong>" folder from your local computer to your hosting server.</p>
+            <p>Please note: your website root depends on the directory structure on your hosting server. If you upload the &quot;<strong>site</strong>&quot; folder itself into your server, the root to your website will be <strong>http://your_domain_name/site</strong>. To avoid this and make the website root <strong>http://your_domain_name/</strong> please open the &quot;<strong>site</strong>&quot;  folder and upload the folder content. </p>
+            <p>This <a href="http://www.templatemonster.com/help/how-upload-files-server-2.html" target="_blank">video tutorial will show you how you can upload files</a> to your host using free FTP software FileZilla.</p>
+            <p>This <a href="http://www.templatemonster.com/help/how-to-upload-files-to-a-server-using-cpanel-webhost-manager-whm.html" target="_blank">video tutorial will show you how you can upload files</a> to your host using hosting cPanel (WebHost Manager, WHM).</p>
+            <p class="error-box">Please do not upload the sources directory or any of the template source files to the hosting server. </p>
+            <h2 id="conclusion">Conclusion</h2>
+            <p>We hope this manual was useful for you and helped you to install, edit the template and to resolve your issues.</p>
+            <p> In case of any difficulties you can contact our support team via the <a href="http://chat.template-help.com/" target="_blank">Live Chat</a> or send a request to our senior technicians via the <a href="http://esupport.template-help.com/index.php?/Tickets/Submit" target="_blank">Online Help Desk</a>. </p>
+            <p>More instructions are available from the following links:</p>
+            <ul>
+            <li><a href="http://templatemonster.com/help/developer-tools.html">Developer Tools</a></li>
+            <li><a href="http://templatemonster.com/help/general-tutorials/hosting-faq/">Hosting FAQ</a></li>
+            <li><a href="http://templatemonster.com/help/general-tutorials/work-with-css/">Working with CSS</a></li>
+            <li><a href="http://templatemonster.com/help/general-tutorials/work-with-photoshop/">Working with Photoshop</a></li>
+            <li><a href="http://templatemonster.com/help/general-tutorials/work-with-html/">Working with HTML</a></li>
+            <li><a href="http://templatemonster.com/help/general-tutorials/work-with-files/">Working with Files</a></li>
+            <li><a href="http://templatemonster.com/help/website-templates/js-animated/js-animated-tutorials/">JS animated templates tutorials</a></li>
+            <li><a href="http://templatemonster.com/help/general-tutorials/work-with-fonts/">Working with fonts</a></li>
+          </ul>
+          </div>
+      </article>
+      </section>
+  </div>
+  </div>
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2787305-5']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+</body>
+</html>

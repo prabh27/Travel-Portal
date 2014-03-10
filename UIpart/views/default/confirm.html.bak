@@ -1,0 +1,45 @@
+{{extend 'layout.html'}}
+<head>
+	<style>
+        .mytable{
+                        
+            font-size:140%;
+            border:1px solid black;    
+            background-color:#0099cc;
+            border-spacing:10px;
+            border-collapse:separate;
+            color:#eeeeee;
+            border-radius:8px 8px;
+            
+            }
+        .mytable caption{
+            color:#222222;
+            font-weight:bold;
+            padding-bottom:4px;   
+        }
+    </style>
+</head>
+
+
+<table class="mytable">
+<caption>Booking details
+    </caption>
+<tr>
+<td>
+    <b>Flight id : </b></td><td>{{=request.vars.lis}}</td></tr>
+    <tr>
+<tr>
+<td>
+    <b>Date : </b></td><td>{{=session.date}}</td></tr>
+    <tr>
+        <td><b>Departure time : </b></td><td>{{=request.vars.dtime}}</td>
+    </tr><tr><td>
+<b>Arrival time : </b></td><td>{{=request.vars.atime}}
+</td>
+</tr>
+<tr>
+<td>
+    <b>Total seats : </b></td><td>{{=request.vars.seats}}<td/></tr><tr><td>
+    <b>Price : </b></td><td>{{=request.vars.price}}<td/></tr><tr><td>
+</table>
+<a href="{{=URL(f='book',vars=dict(lis=request.vars.lis,dtime=request.vars.dtime,atime=request.vars.atime,seats=request.vars.seats,price=request.vars.price,send=request.vars.send,src=request.vars.src,dest=request.vars.dest,cl=request.vars.cl))}}"><button type="button" class="btn btn-primary">Book</button></a>

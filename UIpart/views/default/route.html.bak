@@ -1,0 +1,18 @@
+{{extend 'layout2.html'}}
+<head>
+<style>
+    .table_border_both tbody tr td:nth-child(10),.table_border_both tr th:nth-child(10){
+        display:none;
+    }
+    .table_border_both{
+        border:1px solid black;
+    }
+    </style>
+</head>
+<br>
+<br>
+<p id="change">{{=soup}}</p>
+<script>
+	$a=$('#change').text();
+	$('#change').html($a);
+</script>

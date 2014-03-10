@@ -1,0 +1,41 @@
+{{extend 'layout.html'}}
+<head>
+<style>
+    .ProfileDisp tr td{
+        font-size:18px;
+        font-weight:normal;
+        padding:5px 5px;
+        color:#444444;
+    
+    }
+    </style>
+</head>
+<br/>
+<h2>Welcome {{=rec[0]['Username']}} to your Profile</h2>
+<br>
+<br>
+
+<div style="width:50%;margin:auto;">
+<center><table class="ProfileDisp" style="">
+<tr>
+    <td >Name :</td><td> {{=rec[0]['first_name']}}</td>
+    </tr>
+<tr>
+    <td >E-mail :</td><td> {{=rec[0]['email']}}</td>
+    </tr>
+    <tr>
+        <td >Username :</td><td> {{=rec[0]['Username']}}</td>
+    </tr>
+<tr>
+    <td >Phone :</td><td> {{=rec[0]['Phone']}}</td>
+    </tr>
+<tr>
+    <td >City :</td><td> {{=rec[0]['City']}}</td>
+    </tr>
+    <tr>
+        <td align="right">Country :</td><td> {{=rec[0]['Country']}}</td>
+    </tr>
+</table>
+    </center>
+</div>
+{{=form}}

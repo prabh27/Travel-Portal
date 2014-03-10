@@ -1,0 +1,4 @@
+List of Fonts used in template 
+
+Opensans 	http://www.google.com/webfonts/list?family=Open+Sans&subset=latin
+Sansita One 	http://www.google.com/webfonts/specimen/Sansita+One

@@ -1,0 +1,9 @@
+{{extend 'layout.html'}}
+Hotel Name : {{=hotel['hotelName']}}<br/>
+Hotel Address : {{hotel['hotelAddress']}}<br/>
+Check-in : {{=hotel['arrivalDate']}}<br/>
+Check-out : {{=hotel['departDate']}}<br/>
+Number of rooms : {{=hotel['numberOfRoomsRequested']}}<br/>
+Room information :
+<a href="index"><button type="btn btn-primary">Confirm Booking</button></a>
+
